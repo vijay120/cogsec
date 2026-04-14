@@ -89,6 +89,35 @@ What this trains:
 
 No judgment on the label. Just label and return to what you were doing.
 
+### Mantra repetition: Real-time thought displacement
+
+Meditation trains you to *observe* thoughts. Mantra *displaces* them. Different mechanism, complementary tool.
+
+**How it works mechanistically:**
+
+Repeating a phrase (e.g., "Amitofou") occupies the verbal processing channel — the same channel that generates rumination, worry, and mental chatter. You can't catastrophize and chant simultaneously. It's a hard interrupt on default mode network activity.
+
+**When to use it:**
+
+- **Transition ritual** — 1-2 minutes between activities to clear cognitive residue from the last task. Better than jumping straight from one context to the next.
+- **Distraction interrupt** — when you notice the urge to browse/scroll, 30 seconds of mantra breaks the craving loop.
+- **Walking practice** — sync with steps. Turns commuting into attention training without needing to sit.
+- **Pre-sleep** — replaces the mental replay/planning loop that keeps people awake.
+
+**Implementation intention:** "If I feel the urge to check my phone during deep work, I will repeat Amitofou 10 times before deciding what to do."
+
+**How it fits with the other tools:**
+
+| Tool | Function |
+|------|----------|
+| Meditation | Train awareness of thoughts (gym training) |
+| CBT journaling | Correct distorted thoughts (surgery) |
+| Mantra | Interrupt/displace distorted thoughts in real time (first aid) |
+
+Meditation builds the skill. CBT fixes the patterns. Mantra is portable, immediate, no setup required.
+
+**Key research:** Bernardi et al. (2001, *BMJ*) — repetitive prayer/mantra slows respiration to ~6 breaths/min, maximizing heart rate variability and baroreflex sensitivity. Benson's "relaxation response" research: any repetitive word/phrase triggers parasympathetic activation. The specific word matters less than the repetition + intention.
+
 ## Implementation Intentions — #3 Priority
 
 Peter Gollwitzer's research: "If X, then Y" statements roughly double follow-through probability.
