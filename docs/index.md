@@ -16,6 +16,7 @@ Understand the *why* behind each practice:
 2. **[Processing](wiki/02-processing.md)** — CBT, metacognition, implementation intentions, pre-mortems. How you think.
 3. **[Output](wiki/03-output.md)** — Environmental design, reward protocols, gratitude, goal setting. What you do.
 4. **[Social Environment](wiki/04-social.md)** — Building your cognitive ecosystem. Who you surround yourself with.
+5. **[AI Threats](wiki/05-ai-threats.md)** — Defending against deepfakes, synthetic content, and algorithmic manipulation.
 
 ### The Daily Practice
 
