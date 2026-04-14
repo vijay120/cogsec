@@ -127,7 +127,7 @@ Peter Gollwitzer's research: "If X, then Y" statements roughly double follow-thr
 **Examples:**
 
 - "If I feel the urge to check social media during work, I will take 3 breaths and return to the task"
-- "If I finish a deep work block, I will take a 5-minute walk outside"
+- "If I finish a deep work block, I will stand up and leave my desk immediately"
 - "If someone says something that triggers me, I will pause and label the emotion before responding"
 - "If it's 10pm, I will put my phone in another room"
 
@@ -136,6 +136,79 @@ Peter Gollwitzer's research: "If X, then Y" statements roughly double follow-thr
 **Key research:** Gollwitzer (1999); meta-analysis by Gollwitzer & Sheeran (2006) — d = 0.65 effect size across 94 studies.
 
 **Practice:** Write 3-5 implementation intentions for your current challenges. Revise weekly.
+
+### Post-Deep-Work Recovery: What to Do and Why
+
+Deep work depletes three things:
+
+1. **Directed attention** — the prefrontal cortex resource that holds focus. Finite. Depletes with use.
+2. **Decision-making energy** — decision fatigue is real even if ego depletion is debated.
+3. **Physical tension** — hours of stillness accumulates muscular and postural strain.
+
+Best recovery restores all three simultaneously. Worst recovery (browsing, social media) depletes #1 further while pretending to help.
+
+#### Recovery Activities Ranked
+
+**Tier 1: Full restoration** (restores all three)
+
+| Activity | Why it's top tier |
+|----------|------------------|
+| Walking outdoors (nature if possible) | Attention Restoration Theory (Kaplan, 1995): nature engages "soft fascination" — involuntary attention that lets directed attention recover. Movement, no decisions, fresh air. Even 10 min in a park measurably restores attention. |
+| Table tennis / sport with a partner | Flow state on demand. Complex motor coordination occupies attention *differently* — active recovery. Social component. Unpredictable (no two rallies same) keeps you present. Movement clears physical tension. |
+| Swimming / cold shower | Autonomic nervous system reset. Cold exposure triggers norepinephrine release (alertness without anxiety). Full-body sensory input pulls you completely out of cognitive mode. |
+
+**Tier 2: Strong restoration** (restores 2 of 3)
+
+| Activity | Why it's strong |
+|----------|----------------|
+| Mantra walking (combined) | Walking + mantra = physical recovery + verbal channel cleared of work residue. Sync mantra to steps. 5-10 min. |
+| Stretching / yoga flow | Physical tension release + body awareness pulls attention away from cognitive mode. 5-10 min is enough. |
+| Playing music (instrument) | Motor + auditory + creative — completely different brain networks. Excellent if you play. |
+| Juggling / physical skill practice | Motor learning occupies attention restoratively. 5 min of juggling is surprisingly good. |
+| Cooking something simple | Sensory (smell, touch, taste) + light motor + small creative decisions. |
+
+**Tier 3: Moderate restoration** (restores 1 of 3)
+
+| Activity | Limitation |
+|----------|-----------|
+| Tea/coffee ritual (mindful) | Sensory + ritual, but no movement |
+| Brief conversation | Social recovery, but work topics don't clear context |
+| Drawing / doodling | Creative channel switch, but still sitting |
+
+**Tier 4: Fake restoration** (avoid)
+
+| Activity | Why it fails |
+|----------|-------------|
+| Browsing internet | Depletes same directed attention you just used |
+| Social media | Dopamine hit then crash — worse than before |
+| YouTube | Passive consumption, no restoration |
+| News | Emotional load + directed attention cost |
+
+#### Post-Deep-Work Decision Tree
+
+```
+After finishing a deep work block:
+
+1. Stand up immediately (don't "check one thing" first)
+2. Is someone available for table tennis / sport?
+   --> YES: play for 10-15 min
+   --> NO: go to step 3
+3. Weather OK for walking?
+   --> YES: 10 min walk outside, mantra synced to steps
+   --> NO: go to step 4
+4. Indoor fallback:
+   --> 5 min stretching + 2 min mantra standing
+```
+
+#### Post-Deep-Work Implementation Intentions
+
+1. "When I close my laptop / finish a focus block, I will stand up and leave my desk immediately."
+2. "If someone is available for table tennis, I will play for 10-15 minutes."
+3. "If no one is available, I will walk outside for 10 minutes with mantra."
+4. "If I can't go outside, I will stretch for 5 minutes and chant for 2 minutes."
+5. "I will not open a browser or check my phone until after the recovery activity."
+
+Rule #5 is critical. The moment between finishing deep work and starting recovery is the vulnerability window. That's when "let me just check one thing" happens. The implementation intention pre-loads the decision so you don't need willpower in that moment.
 
 ## Pre-Mortem Analysis
 
