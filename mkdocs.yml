@@ -1,0 +1,52 @@
+site_name: Personal Cognitive Security
+site_description: A personal practice framework for cognitive resilience, happiness, and effective goal execution
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - content.tabs.link
+
+nav:
+  - Home: index.md
+  - Knowledge Base:
+    - Perception: wiki/01-perception.md
+    - Processing: wiki/02-processing.md
+    - Output: wiki/03-output.md
+    - Social Environment: wiki/04-social.md
+  - Daily Practice:
+    - Daily Checklist: practice/daily-checklist.md
+    - CBT Journal: practice/cbt-journal.md
+    - Weekly Review: practice/weekly-review.md
+  - Tracking:
+    - Progress Tracker: tracker/tracker.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - def_list
+  - attr_list
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
