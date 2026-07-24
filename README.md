@@ -14,7 +14,9 @@ cogsec/
 │   ├── 01-perception.md     # Layer 1: What gets in
 │   ├── 02-processing.md     # Layer 2: How you think
 │   ├── 03-output.md         # Layer 3: What you do
-│   └── 04-social.md         # Building your cognitive environment
+│   ├── 04-social.md         # Layer 4: Building your cognitive environment
+│   ├── 05-ai-threats.md     # Layer 5: Defending against synthetic manipulation
+│   └── 06-desire.md         # Layer 6: Freedom from compulsion (desire & aversion)
 ├── practice/                # The "how" — daily systems
 │   ├── daily-checklist.md   # Morning + evening routine
 │   ├── weekly-review.md     # Weekly reflection template

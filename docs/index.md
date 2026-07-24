@@ -17,6 +17,7 @@ Understand the *why* behind each practice:
 3. **[Output](wiki/03-output.md)** — Environmental design, reward protocols, gratitude, goal setting. What you do.
 4. **[Social Environment](wiki/04-social.md)** — Building your cognitive ecosystem. Who you surround yourself with.
 5. **[AI Threats](wiki/05-ai-threats.md)** — Defending against deepfakes, synthetic content, and algorithmic manipulation.
+6. **[Desire & Aversion](wiki/06-desire.md)** — Freedom from compulsion. Pornography as the worked case; equanimity toward craving and aversion.
 
 ### The Daily Practice
 
