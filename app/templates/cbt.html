@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}CBT · CogSec{% endblock %}
+{% block content %}
+<h1>CBT journal</h1>
+<p class="lede">The reappraisal happens as you write. The balanced-thought column is the payoff.</p>
+
+<form method="post" class="card form">
+  <div class="row">
+    <label>Date <input type="date" name="entry_date" value="{{ today }}"></label>
+    <label>Distortion
+      <select name="distortion">
+        <option value="">— pick primary —</option>
+        {% for d in distortions %}<option value="{{ d }}">{{ d }}</option>{% endfor %}
+      </select></label>
+    <label>Mood before (1–10) <input type="number" min="1" max="10" name="mood_before"></label>
+    <label>Mood after (1–10) <input type="number" min="1" max="10" name="mood_after"></label>
+  </div>
+  <label class="block">Situation <span class="hint">facts only — what a camera would record</span>
+    <textarea name="situation" rows="2"></textarea></label>
+  <label class="block">Automatic thought <span class="hint">the raw, unfiltered reaction</span>
+    <textarea name="automatic_thought" rows="2"></textarea></label>
+  <label class="block">Balanced thought <span class="hint">accurate reassessment, not positive spin</span>
+    <textarea name="balanced_thought" rows="3"></textarea></label>
+  <button type="submit">Save entry</button>
+</form>
+
+<h2 class="mt">Recent entries</h2>
+{% for e in entries %}
+  <article class="entry">
+    <div class="entry-head">
+      <span>{{ e['entry_date'] }}</span>
+      {% if e['distortion'] %}<span class="tag">{{ e['distortion'] }}</span>{% endif %}
+      {% if e['mood_before'] and e['mood_after'] %}
+        <span class="delta">{{ e['mood_before'] }} → {{ e['mood_after'] }}</span>{% endif %}
+      {{ delete_btn('cbt_entry', e['id']) }}
+    </div>
+    {% if e['situation'] %}<p><b>Situation.</b> {{ e['situation'] }}</p>{% endif %}
+    {% if e['automatic_thought'] %}<p><b>Thought.</b> {{ e['automatic_thought'] }}</p>{% endif %}
+    {% if e['balanced_thought'] %}<p class="balanced"><b>Balanced.</b> {{ e['balanced_thought'] }}</p>{% endif %}
+  </article>
+{% else %}
+  <p class="empty">No entries yet.</p>
+{% endfor %}
+{% endblock %}

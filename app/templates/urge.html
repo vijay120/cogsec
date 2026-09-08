@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Urge · CogSec{% endblock %}
+{% block content %}
+<h1>Compulsion &amp; urge log</h1>
+<p class="lede">Log the urge whether or not you acted. Every surfed urge is one extinction rep.</p>
+
+<form method="post" class="card form">
+  <div class="row">
+    <label>When <input type="datetime-local" name="logged_at" value="{{ now }}"></label>
+    <label>Trigger
+      <select name="trigger">
+        {% for t in triggers %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
+      </select></label>
+    <label>Feeling underneath
+      <select name="feeling">
+        {% for f in feelings %}<option value="{{ f }}">{{ f }}</option>{% endfor %}
+      </select></label>
+  </div>
+  <label class="block">Intensity at peak: <output id="io">5</output>/10
+    <input type="range" min="1" max="10" value="5" name="intensity"
+           oninput="io.value=this.value"></label>
+  <fieldset class="radios">
+    <legend>Outcome</legend>
+    {% for o in outcomes %}
+      <label class="pill {{ o }}"><input type="radio" name="outcome" value="{{ o }}"
+        {{ 'checked' if o == 'surfed' }}> {{ o | capitalize }}</label>
+    {% endfor %}
+  </fieldset>
+  <label class="block">Notes <span class="hint">what did you do instead? how long did it last?</span>
+    <textarea name="notes" rows="2"></textarea></label>
+  <button type="submit">Log urge</button>
+</form>
+
+<h2 class="mt">Recent urges</h2>
+<table class="log">
+  <thead><tr><th>When</th><th>Trigger</th><th>Feeling</th><th>Int.</th><th>Outcome</th><th></th></tr></thead>
+  <tbody>
+  {% for e in entries %}
+    <tr>
+      <td>{{ e['logged_at'] | replace('T', ' ') }}</td>
+      <td>{{ e['trigger'] }}</td>
+      <td>{{ e['feeling'] }}</td>
+      <td>{{ e['intensity'] }}</td>
+      <td><span class="pill {{ e['outcome'] }} sm">{{ e['outcome'] }}</span></td>
+      <td>{{ delete_btn('urge_log', e['id']) }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="6" class="empty">No entries yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

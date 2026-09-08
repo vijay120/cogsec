@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · CogSec{% endblock %}
+{% block content %}
+<h1>Dashboard</h1>
+
+<section class="tiles">
+  <div class="tile hero">
+    <div class="tile-label">Days since last slip</div>
+    <div class="tile-value">{{ streak if streak is not none else '—' }}
+      <span class="flame">{{ '🔥' if streak and streak >= 3 else '' }}</span></div>
+    <div class="tile-sub">extinction / abstinence streak</div>
+  </div>
+  <div class="tile">
+    <div class="tile-label">Daily-log streak</div>
+    <div class="tile-value">{{ log_streak }}</div>
+    <div class="tile-sub">consecutive days logged</div>
+  </div>
+  <div class="tile">
+    <div class="tile-label">Avg sleep (30d)</div>
+    <div class="tile-value">{{ adherence.avg_sleep if adherence.avg_sleep is not none else '—' }}
+      <span class="unit">h</span></div>
+    <div class="tile-sub">{{ adherence.days_logged }} days logged</div>
+  </div>
+</section>
+
+<section class="tiles">
+  <div class="tile mini"><div class="tile-label">Exercise</div>
+    <div class="tile-value sm">{{ adherence.exercise_pct }}<span class="unit">%</span></div></div>
+  <div class="tile mini"><div class="tile-label">Meditation</div>
+    <div class="tile-value sm">{{ adherence.meditation_pct }}<span class="unit">%</span></div></div>
+  <div class="tile mini"><div class="tile-label">No-phone AM</div>
+    <div class="tile-value sm">{{ adherence.no_phone_pct }}<span class="unit">%</span></div></div>
+  <div class="tile mini"><div class="tile-label">Urges surfed</div>
+    <div class="tile-value sm">{{ outcomes.get('surfed', 0) }}</div></div>
+  <div class="tile mini"><div class="tile-label">Redirected</div>
+    <div class="tile-value sm">{{ outcomes.get('redirected', 0) }}</div></div>
+  <div class="tile mini"><div class="tile-label">Acted</div>
+    <div class="tile-value sm warn">{{ outcomes.get('acted', 0) }}</div></div>
+</section>
+
+<div class="grid2">
+  <section class="card">
+    <h2>Daily score <span class="hint">practices done per day · aim 8+</span></h2>
+    {{ score_svg | safe }}
+  </section>
+  <section class="card">
+    <h2>Urge frequency <span class="hint">per week · last 8</span></h2>
+    {{ freq_svg | safe }}
+  </section>
+</div>
+
+<div class="grid2">
+  <section class="card">
+    <h2>Urge intensity <span class="hint">avg per week · 1–10</span></h2>
+    {{ intensity_svg | safe }}
+  </section>
+  <section class="card">
+    <h2>Top distortions <span class="hint">from CBT entries</span></h2>
+    {{ distortion_svg | safe }}
+  </section>
+</div>
+
+<section class="card">
+  <h2>How to use this <span class="hint">two touches a day + weekly</span></h2>
+  <table class="log rhythm">
+    <thead><tr><th>When</th><th>What</th><th>Time</th></tr></thead>
+    <tbody>
+      <tr><td>Morning</td><td><a href="{{ url_for('daily') }}">Daily log</a>, part 1 — sleep, habits, 3 intentions</td><td>~1 min</td></tr>
+      <tr><td>In the moment</td><td><a href="{{ url_for('urge') }}">Urge log</a>; <a href="{{ url_for('cbt') }}">CBT</a> when something bothers you</td><td>seconds</td></tr>
+      <tr><td>Evening</td><td><a href="{{ url_for('daily') }}">Daily log</a>, part 2 — reopens with your morning entries; add reflection + tomorrow's #1</td><td>~4 min</td></tr>
+      <tr><td>Once a week (Sat)</td><td><a href="{{ url_for('weekly') }}">Weekly review</a></td><td>~15 min</td></tr>
+      <tr><td>Anytime</td><td>Glance at this dashboard for trends</td><td>—</td></tr>
+    </tbody>
+  </table>
+</section>
+{% endblock %}

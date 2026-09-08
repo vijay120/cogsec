@@ -1,0 +1,17 @@
+# Never bake the journal into an image layer — it belongs on the volume only.
+*.db
+*.db-wal
+*.db-shm
+
+.git
+.github
+.venv
+__pycache__
+**/__pycache__
+*.pyc
+
+# Wiki content, not part of the app image.
+docs
+site
+mkdocs.yml
+README.md

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Launch the CogSec Tracker locally. Turn it on to log, Ctrl-C to stop.
+set -e
+here="$(cd "$(dirname "$0")" && pwd)"
+repo="$(dirname "$here")"
+venv="$repo/.venv"
+
+# Create the venv + install Flask on first run.
+if [ ! -x "$venv/bin/python" ]; then
+  echo "Creating virtualenv…"
+  python3 -m venv "$venv"
+fi
+if ! "$venv/bin/python" -c "import flask" 2>/dev/null; then
+  echo "Installing dependencies…"
+  "$venv/bin/pip" install -q -r "$here/requirements.txt"
+fi
+
+echo "CogSec Tracker → http://127.0.0.1:8765  (Ctrl-C to stop)"
+exec "$venv/bin/python" "$here/server.py"

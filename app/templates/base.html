@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- viewport-fit=cover lets the layout reach under the notch/home indicator;
+       the CSS pays that back with env(safe-area-inset-*) padding. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1719">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{% block title %}CogSec Tracker{% endblock %}</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="manifest" href="{{ url_for('manifest') }}">
+  <link rel="icon" href="{{ url_for('favicon') }}" sizes="any">
+  <link rel="apple-touch-icon" href="{{ url_for('apple_touch_icon') }}">
+
+  <!-- iOS home-screen behaviour: fullscreen, no Safari chrome. -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CogSec">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🧠 CogSec <span>Tracker</span></div>
+    <nav>
+      {% set items = [
+        ('dashboard', 'Dashboard', '◈'), ('daily', 'Daily', '☑'),
+        ('cbt', 'CBT', '✎'), ('urge', 'Urge', '⚡'), ('weekly', 'Weekly', '↻')] %}
+      {% for key, label, glyph in items %}
+        <a href="{{ url_for(key) }}"
+           class="{{ 'on' if active == key else '' }}">
+          <span class="tabicon" aria-hidden="true">{{ glyph }}</span>{{ label }}</a>
+      {% endfor %}
+    </nav>
+    {% if auth_enabled() %}
+      <form method="post" action="{{ url_for('logout') }}" class="logout">
+        <button class="link" title="Log out">Lock</button>
+      </form>
+    {% endif %}
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>Private · one passcode, one database, no third parties</footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+    // Clear cached pages on the way out so the journal doesn't outlive the session.
+    document.querySelector('.logout')?.addEventListener('submit', () => {
+      navigator.serviceWorker?.controller?.postMessage({ type: 'clear-cache' });
+    });
+  </script>
+</body>
+</html>

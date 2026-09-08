@@ -1,3 +1,7 @@
 site/
 .venv/
 __pycache__/
+
+# Personal tracker data — never commit (stays local only)
+*.db
+app/cogsec.db

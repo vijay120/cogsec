@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}Daily · CogSec{% endblock %}
+{# helpers: v() = text/number value, ck() = 'checked' if truthy #}
+{% macro v(field) %}{{ cur[field] if cur and cur[field] is not none else '' }}{% endmacro %}
+{% macro ck(field) %}{{ 'checked' if cur and cur[field] }}{% endmacro %}
+{% block content %}
+<h1>Daily practice log</h1>
+<p class="lede">Mirrors the daily checklist — morning, day, evening. One row per day,
+and it <b>loads what you've already saved for that day</b>, so you can fill the morning
+part in the AM and the reflection at night.</p>
+<p class="scorenote">Your <b>daily score</b> is just how many practices you did that day —
+<b>aim for 8+ most days, not all {{ daily_max }}</b>. Skipping items is normal (some don't
+apply every day), and a partial day still saves in full. It's a consistency signal, not a grade.
+<span class="hint">12+ Excellent · 8–11 Good · 4–7 Partial · 0–3 Reset</span></p>
+
+{% if cur %}<p class="editing">✓ <b>{{ sel_date }}</b> is saved ({{ cur['score'] }} practices · {{ score_band(cur['score']) }}) — nothing left to finish.
+Add your evening entries whenever and save again to update the day. Reopen any date from <b>Recent days</b> below to review it later.</p>{% endif %}
+
+<form method="post" class="card form">
+  <div class="row">
+    <label>Date <input type="date" name="log_date" value="{{ sel_date }}"
+           onchange="location.href='?date='+this.value"></label>
+    <label>Sleep last night (h) <input type="number" step="0.25" min="0" max="14" name="sleep_hours" value="{{ v('sleep_hours') }}" placeholder="7.5"></label>
+    <label>Mood (1–10) <input type="number" min="1" max="10" name="mood" value="{{ v('mood') }}"></label>
+  </div>
+
+  <fieldset>
+    <legend>🌅 Morning</legend>
+    <div class="checkgrid">
+      <label><input type="checkbox" name="no_phone_am" {{ ck('no_phone_am') }}> No phone, first 30 min</label>
+      <label><input type="checkbox" name="exercise" {{ ck('exercise') }}> Exercise (30 min)</label>
+      <label><input type="checkbox" name="meditation" {{ ck('meditation') }}> Meditation (10 min)</label>
+    </div>
+    <label class="block">3 intentions <span class="hint">each: a priority — because it matters (write before email/Slack)</span>
+      <textarea name="intentions" rows="3" placeholder="1. … because …&#10;2. … because …&#10;3. … because …">{{ v('intentions') }}</textarea></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>☀️ During the day</legend>
+    <div class="row">
+      <label>Deep-work blocks (60–90 min) <input type="number" min="0" max="12" name="deep_work_blocks" value="{{ cur['deep_work_blocks'] if cur else 0 }}"></label>
+    </div>
+    <div class="checkgrid">
+      <label><input type="checkbox" name="phone_away_focus" {{ ck('phone_away_focus') }}> Phone in another room during focus</label>
+      <label><input type="checkbox" name="post_block_reward" {{ ck('post_block_reward') }}> Post-block reward (walk, not browsing)</label>
+    </div>
+    <div class="checkgrid">
+      <label><input type="checkbox" name="metacog_thought" {{ ck('metacog_thought') }}> Caught &amp; labeled a thought pattern</label>
+      <label><input type="checkbox" name="metacog_emotion" {{ ck('metacog_emotion') }}> Named an emotion before reacting</label>
+      <label><input type="checkbox" name="impl_intention" {{ ck('impl_intention') }}> An "If X → then Y" fired today</label>
+    </div>
+    <p class="hint inline">Had a difficult moment? Log a reappraisal on the
+      <a href="{{ url_for('cbt') }}">CBT page</a>.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>🌙 Evening</legend>
+    <label class="block">3 specific gratitudes <span class="hint">what happened + why it mattered</span>
+      <textarea name="gratitude" rows="3" placeholder="1. …&#10;2. …&#10;3. …">{{ v('gratitude') }}</textarea></label>
+    <div class="row">
+      <label>What worked today? <textarea name="eve_worked" rows="2">{{ v('eve_worked') }}</textarea></label>
+      <label>What didn't? <textarea name="eve_didnt" rows="2">{{ v('eve_didnt') }}</textarea></label>
+      <label>Do differently tomorrow? <textarea name="eve_differently" rows="2">{{ v('eve_differently') }}</textarea></label>
+    </div>
+    <label class="block">⭐ Tomorrow's #1 priority <span class="hint">just one</span>
+      <input type="text" name="tomorrow_priority" value="{{ v('tomorrow_priority') }}" placeholder="The one thing that matters most tomorrow"></label>
+    <div class="checkgrid">
+      <label><input type="checkbox" name="phone_away_pm" {{ ck('phone_away_pm') }}> Phone in another room by 10pm</label>
+      <label><input type="checkbox" name="screens_off" {{ ck('screens_off') }}> Screens off 30 min before bed</label>
+    </div>
+  </fieldset>
+
+  <label class="block">Notes <textarea name="notes" rows="2">{{ v('notes') }}</textarea></label>
+
+  <div class="saverow">
+    <div class="livescore">Today: <b id="live">0</b> practices
+      <span id="liveband" class="liveband"></span>
+      <span class="hint">aim 8+ · not every item applies daily</span></div>
+    <button type="submit">{{ 'Update day' if cur else 'Save day' }}</button>
+  </div>
+</form>
+
+<script>
+(function () {
+  var form = document.querySelector('form.form');
+  function el(n) { return form.elements[n]; }
+  function checked(n) { var e = el(n); return !!(e && e.checked); }
+  function num(n) { var e = el(n); return e ? (parseFloat(e.value) || 0) : 0; }
+  function filled() {
+    for (var i = 0; i < arguments.length; i++) {
+      var e = el(arguments[i]);
+      if (e && (e.value || '').trim() !== '') return true;
+    }
+    return false;
+  }
+  function score() {
+    var items = [
+      num('sleep_hours') >= 7, checked('no_phone_am'), filled('intentions'),
+      checked('exercise'), checked('meditation'), num('deep_work_blocks') >= 1,
+      checked('phone_away_focus'), checked('post_block_reward'),
+      checked('metacog_thought'), checked('metacog_emotion'), checked('impl_intention'),
+      filled('gratitude'), filled('eve_worked', 'eve_didnt', 'eve_differently'),
+      filled('tomorrow_priority'), checked('phone_away_pm'), checked('screens_off')
+    ];
+    return items.reduce(function (a, b) { return a + (b ? 1 : 0); }, 0);
+  }
+  function band(s) { return s >= 12 ? 'Excellent' : s >= 8 ? 'Good' : s >= 4 ? 'Partial' : 'Reset'; }
+  function update() {
+    var s = score();
+    document.getElementById('live').textContent = s;
+    var b = document.getElementById('liveband');
+    b.textContent = band(s);
+    b.className = 'liveband ' + band(s).toLowerCase();
+  }
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
+  update();
+})();
+</script>
+
+<h2 class="mt">Recent days <span class="hint">click a date to edit</span></h2>
+<table class="log">
+  <thead><tr><th>Date</th><th>Practices</th><th>Sleep</th><th>DW</th><th>Mood</th><th>Tomorrow's priority</th><th></th></tr></thead>
+  <tbody>
+  {% for e in entries %}
+    <tr>
+      <td><a href="?date={{ e['log_date'] }}">{{ e['log_date'] }}</a></td>
+      <td><span class="badge">{{ e['score'] }}</span> <span class="band-inline {{ score_band(e['score'])|lower }}">{{ score_band(e['score']) }}</span></td>
+      <td>{{ e['sleep_hours'] if e['sleep_hours'] is not none else '—' }}</td>
+      <td>{{ e['deep_work_blocks'] }}</td>
+      <td>{{ e['mood'] if e['mood'] is not none else '—' }}</td>
+      <td class="muted-cell">{{ e['tomorrow_priority'] or '—' }}</td>
+      <td>{{ delete_btn('daily_log', e['id']) }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="7" class="empty">No entries yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

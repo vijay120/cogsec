@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Full-bleed background: iOS applies its own corner mask to apple-touch-icon,
+       and the manifest icons are "maskable", so the art stays inside a centre safe zone. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12242a"/>
+      <stop offset="100%" stop-color="#0c1719"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Shield + node mark, ~62% of the canvas, centred. -->
+  <g transform="translate(512 512) scale(6.4) translate(-50 -52)">
+    <path d="M50 8 L88 22 L88 52 C88 74 70 88 50 96 C30 88 12 74 12 52 L12 22 Z"
+          fill="none" stroke="#2fd0bd" stroke-width="8"
+          stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="11" fill="#f2b45a"/>
+  </g>
+</svg>

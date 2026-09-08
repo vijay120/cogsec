@@ -1,0 +1,46 @@
+# CogSec Tracker on Fly.io.
+#
+# Cost shape: the machine stops when idle and wakes on the next request, so you
+# pay for the seconds you actually use plus ~$0.15/mo of storage. A tracker
+# touched a few times a day lands well under $1/mo.
+#
+# `fly launch` will rewrite app/primary_region — that's expected.
+
+app = "cogsec-120"
+primary_region = "sjc"          # change to your nearest region: fly platform regions
+
+[build]
+
+[env]
+  COGSEC_DB = "/data/cogsec.db"
+  # Turns the passcode gate from optional into mandatory: without a passcode
+  # secret set, the app refuses to boot rather than serving your journal openly.
+  COGSEC_REQUIRE_AUTH = "1"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0      # scale to zero between uses
+  # One machine only. The volume can't be shared, and a second writer would
+  # fight the first over the SQLite lock.
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 20
+    hard_limit = 40
+
+[[http_service.checks]]
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "10s"
+  method = "GET"
+  path = "/healthz"
+
+[mounts]
+  source = "cogsec_data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Weekly · CogSec{% endblock %}
+{% block content %}
+<h1>Weekly review</h1>
+<p class="lede">Sunday reflection. Re-submitting the same week updates it.</p>
+
+<form method="post" class="card form">
+  <div class="row">
+    <label>Week starting (Mon) <input type="date" name="week_start" value="{{ monday }}"></label>
+    <label>Week score (1–10) <input type="number" min="1" max="10" name="score"></label>
+  </div>
+  <div class="row">
+    <label>Most common distortion
+      <select name="top_distortion">
+        <option value="">—</option>
+        {% for d in distortions %}<option value="{{ d }}">{{ d }}</option>{% endfor %}
+      </select></label>
+    <label>Most common trigger
+      <select name="top_trigger">
+        <option value="">—</option>
+        {% for t in triggers %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
+      </select></label>
+  </div>
+  <label class="block">What worked? <textarea name="what_worked" rows="2"></textarea></label>
+  <label class="block">What didn't? <textarea name="what_didnt" rows="2"></textarea></label>
+  <label class="block">What will I do differently? <textarea name="differently" rows="2"></textarea></label>
+  <button type="submit">Save review</button>
+</form>
+
+<h2 class="mt">Past reviews</h2>
+{% for e in entries %}
+  <article class="entry">
+    <div class="entry-head">
+      <span>Week of {{ e['week_start'] }}</span>
+      {% if e['score'] %}<span class="badge">{{ e['score'] }}/10</span>{% endif %}
+      {% if e['top_distortion'] %}<span class="tag">{{ e['top_distortion'] }}</span>{% endif %}
+      {% if e['top_trigger'] %}<span class="tag">{{ e['top_trigger'] }}</span>{% endif %}
+      {{ delete_btn('weekly_review', e['id']) }}
+    </div>
+    {% if e['what_worked'] %}<p><b>Worked.</b> {{ e['what_worked'] }}</p>{% endif %}
+    {% if e['what_didnt'] %}<p><b>Didn't.</b> {{ e['what_didnt'] }}</p>{% endif %}
+    {% if e['differently'] %}<p><b>Differently.</b> {{ e['differently'] }}</p>{% endif %}
+  </article>
+{% else %}
+  <p class="empty">No reviews yet.</p>
+{% endfor %}
+{% endblock %}
