@@ -49,6 +49,12 @@ Add your evening entries whenever and save again to update the day. Reopen any d
       <label><input type="checkbox" name="metacog_emotion" {{ ck('metacog_emotion') }}> Named an emotion before reacting</label>
       <label><input type="checkbox" name="impl_intention" {{ ck('impl_intention') }}> An "If X → then Y" fired today</label>
     </div>
+    <div class="checkgrid">
+      <label><input type="checkbox" name="grayscale" {{ ck('grayscale') }}> Phone in grayscale all day</label>
+      <label><input type="checkbox" name="phone_parked_wc" {{ ck('phone_parked_wc') }}> Phone parked outside the bathroom, every trip</label>
+    </div>
+    <p class="hint inline">Log each sprint's goal and break on the
+      <a href="{{ url_for('focus') }}">Focus page</a>.</p>
     <p class="hint inline">Had a difficult moment? Log a reappraisal on the
       <a href="{{ url_for('cbt') }}">CBT page</a>.</p>
   </fieldset>
@@ -67,6 +73,7 @@ Add your evening entries whenever and save again to update the day. Reopen any d
     <div class="checkgrid">
       <label><input type="checkbox" name="phone_away_pm" {{ ck('phone_away_pm') }}> Phone in another room by 10pm</label>
       <label><input type="checkbox" name="screens_off" {{ ck('screens_off') }}> Screens off 30 min before bed</label>
+      <label><input type="checkbox" name="real_conversation" {{ ck('real_conversation') }}> A real conversation (in person or a call)</label>
     </div>
   </fieldset>
 
@@ -99,8 +106,10 @@ Add your evening entries whenever and save again to update the day. Reopen any d
       checked('exercise'), checked('meditation'), num('deep_work_blocks') >= 1,
       checked('phone_away_focus'), checked('post_block_reward'),
       checked('metacog_thought'), checked('metacog_emotion'), checked('impl_intention'),
+      checked('grayscale'), checked('phone_parked_wc'),
       filled('gratitude'), filled('eve_worked', 'eve_didnt', 'eve_differently'),
-      filled('tomorrow_priority'), checked('phone_away_pm'), checked('screens_off')
+      filled('tomorrow_priority'), checked('phone_away_pm'), checked('screens_off'),
+      checked('real_conversation')
     ];
     return items.reduce(function (a, b) { return a + (b ? 1 : 0); }, 0);
   }

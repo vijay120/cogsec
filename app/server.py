@@ -176,14 +176,28 @@ DISTORTIONS = [
     "Emotional reasoning", "Should statements", "Discounting positives",
     "Personalization", "Fortune telling", "Labeling",
 ]
+# Which compulsion an urge belongs to. Each gets its own slip streak, so a phone
+# slip never resets the porn-extinction count (or vice versa).
+HABITS = [("porn", "Sexual / porn"), ("phone", "Phone / scrolling"), ("other", "Other")]
 URGE_TRIGGERS = [
     "Post-nap (sleep inertia)", "Alone / unstructured time", "Browsing / image",
-    "In bed with phone", "Stress", "Boredom", "Other",
+    "In bed with phone", "Stress", "Boredom",
+    # phone-reach cues
+    "Bathroom / toilet", "Waiting / in line", "Between tasks", "Just woke up",
+    "Other",
 ]
 URGE_FEELINGS = [
-    "Restless / tense", "Bored", "Lonely", "Tired", "Hungry", "Angry",
-    "Anxious / stressed", "Genuine desire", "Other",
+    "Restless / tense", "Bored", "Want novelty", "Lonely", "Tired", "Hungry",
+    "Angry", "Anxious / stressed", "Genuine desire", "Other",
 ]
+# Ranked best → worst per the 2024 break study Yousef cites; scrolling and news
+# are listed so you can be honest about them, not because they count as rest.
+BREAK_TYPES = [
+    "Nature / walk outside", "Nothing (eyes closed, rest)",
+    "Two-handed task (tea, dishes)", "Water + daylight", "Absorbing hobby",
+    "Talked to someone", "Reading news", "Scrolling", "No break",
+]
+GOAL_HIT = ["yes", "partial", "no"]
 OUTCOMES = ["surfed", "redirected", "acted"]
 
 
@@ -207,7 +221,7 @@ def _bool(name):
     return 1 if request.form.get(name) else 0
 
 
-DAILY_MAX = 16  # number of items counted below
+DAILY_MAX = 19  # number of items counted below
 
 
 def compute_daily_score(f):
@@ -227,11 +241,14 @@ def compute_daily_score(f):
         f.get("metacog_thought"),
         f.get("metacog_emotion"),
         f.get("impl_intention"),
+        f.get("grayscale"),
+        f.get("phone_parked_wc"),
         filled("gratitude"),                     # evening
         filled("eve_worked", "eve_didnt", "eve_differently"),
         filled("tomorrow_priority"),
         f.get("phone_away_pm"),
         f.get("screens_off"),
+        f.get("real_conversation"),
     ]
     return sum(1 for i in items if i)
 
@@ -254,7 +271,10 @@ def score_band(score):
 def dashboard():
     scores = db.daily_scores(30)
     weekly = db.urge_weekly(8)
+    phone_weekly = db.urge_weekly(8, habit="phone")
     distortions = db.top_distortions(5)
+    checkups = db.checkup_series(12)
+    focus = db.focus_stats(30)
 
     score_svg = charts.sparkline(scores, color=charts.TEAL, fixed_max=DAILY_MAX)
     freq_svg = charts.bars(
@@ -268,17 +288,36 @@ def dashboard():
     distortion_svg = charts.hbars(
         [(r["distortion"], r["n"]) for r in distortions], color=charts.TEAL
     )
+    phone_freq_svg = charts.bars(
+        [{"label": w["week"], "value": w["count"]} for w in phone_weekly],
+        color=charts.AMBER,
+    )
+    screen_svg = charts.sparkline(
+        [(c["month"], c["screen_time_hours"]) for c in checkups], color=charts.AMBER
+    )
+    pickups_svg = charts.sparkline(
+        [(c["month"], c["pickups"]) for c in checkups], color=charts.AMBER
+    )
+    break_svg = charts.hbars(focus["breaks"], color=charts.TEAL)
     return render_template(
         "dashboard.html",
         active="dashboard",
         adherence=db.adherence(30),
         streak=db.days_since_last_slip(),
+        phone_streak=db.days_since_last_slip("phone"),
+        focus=focus,
+        latest_checkup=checkups[-1] if checkups else None,
+        this_month=date.today().strftime("%Y-%m"),
         log_streak=db.daily_streak(),
         outcomes=db.urge_outcomes(),
         score_svg=score_svg,
         freq_svg=freq_svg,
         intensity_svg=intensity_svg,
         distortion_svg=distortion_svg,
+        phone_freq_svg=phone_freq_svg,
+        screen_svg=screen_svg,
+        pickups_svg=pickups_svg,
+        break_svg=break_svg,
     )
 
 
@@ -309,6 +348,9 @@ def daily():
             "tomorrow_priority": g("tomorrow_priority"),
             "phone_away_pm": _bool("phone_away_pm"),
             "screens_off": _bool("screens_off"),
+            "grayscale": _bool("grayscale"),
+            "phone_parked_wc": _bool("phone_parked_wc"),
+            "real_conversation": _bool("real_conversation"),
             "mood": _int("mood"),
             "notes": g("notes"),
         }
@@ -351,6 +393,7 @@ def urge():
         db.insert_urge({
             "logged_at": logged_at,
             "log_date": logged_at[:10],
+            "habit": request.form.get("habit") or "porn",
             "trigger": request.form.get("trigger", ""),
             "feeling": request.form.get("feeling", ""),
             "intensity": _int("intensity"),
@@ -361,8 +404,56 @@ def urge():
     return render_template(
         "urge.html", active="urge",
         now=datetime.now().strftime("%Y-%m-%dT%H:%M"),
+        habits=HABITS, habit_labels=dict(HABITS),
         triggers=URGE_TRIGGERS, feelings=URGE_FEELINGS, outcomes=OUTCOMES,
         entries=db.recent("urge_log", 20),
+    )
+
+
+@app.route("/focus", methods=["GET", "POST"])
+def focus():
+    if request.method == "POST":
+        db.insert_focus({
+            "sprint_date": request.form.get("sprint_date") or date.today().isoformat(),
+            "output_goal": request.form.get("output_goal", "").strip(),
+            "planned_min": _int("planned_min"),
+            "calendared": _bool("calendared"),
+            "phone_away": _bool("phone_away"),
+            "timer": _bool("timer"),
+            "goal_hit": request.form.get("goal_hit", ""),
+            "break_type": request.form.get("break_type", ""),
+            "notes": request.form.get("notes", "").strip(),
+        })
+        return redirect(url_for("focus"))
+    stats = db.focus_stats(30)
+    return render_template(
+        "focus.html", active="focus", today=date.today().isoformat(),
+        break_types=BREAK_TYPES, goal_hit=GOAL_HIT, stats=stats,
+        break_svg=charts.hbars(stats["breaks"], color=charts.TEAL),
+        entries=db.recent("focus_sprint", 20),
+    )
+
+
+@app.route("/checkup", methods=["GET", "POST"])
+def checkup():
+    if request.method == "POST":
+        month = request.form.get("month") or date.today().strftime("%Y-%m")
+        db.upsert_checkup({
+            "month": month,
+            "screen_time_hours": _float("screen_time_hours"),
+            "pickups": _int("pickups"),
+            "top_app": request.form.get("top_app", "").strip(),
+            "grayscale_shortcut": _bool("grayscale_shortcut"),
+            "vip_notifications": _bool("vip_notifications"),
+            "keyword_alerts": _bool("keyword_alerts"),
+            "feeds_pruned": _bool("feeds_pruned"),
+            "notes": request.form.get("notes", "").strip(),
+        })
+        return redirect(url_for("checkup", month=month))
+    month = request.args.get("month") or date.today().strftime("%Y-%m")
+    return render_template(
+        "checkup.html", active="checkup", month=month,
+        cur=db.get_checkup(month), entries=db.recent("attention_checkup", 12),
     )
 
 

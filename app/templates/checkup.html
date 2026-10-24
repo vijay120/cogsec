@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Check-up · CogSec{% endblock %}
+{% macro v(field) %}{{ cur[field] if cur and cur[field] is not none else '' }}{% endmacro %}
+{% macro ck(field) %}{{ 'checked' if cur and cur[field] }}{% endmacro %}
+{% block content %}
+<h1>Monthly attention check-up</h1>
+<p class="lede">An "annual physical" for your attention, done monthly. Copy last month's
+daily averages from <b>Settings → Screen Time → See All App &amp; Website Activity</b>,
+then check your phone's defaults are still set the way you chose. Re-saving a month updates it.</p>
+
+{% if cur %}<p class="editing">✓ <b>{{ month }}</b> is saved. Edit and save again to update it.</p>{% endif %}
+
+<form method="post" class="card form">
+  <div class="row">
+    <label>Month <input type="month" name="month" value="{{ month }}"
+           onchange="location.href='?month='+this.value"></label>
+    <label>Screen time (h/day avg) <input type="number" step="0.1" min="0" max="24" name="screen_time_hours" value="{{ v('screen_time_hours') }}" placeholder="3.5"></label>
+    <label>Pickups (per day avg) <input type="number" min="0" max="1000" name="pickups" value="{{ v('pickups') }}" placeholder="80"></label>
+  </div>
+  <label class="block">Top app by time <input type="text" name="top_app" value="{{ v('top_app') }}"></label>
+  <fieldset>
+    <legend>Defaults audit: still in place?</legend>
+    <div class="checkgrid">
+      <label><input type="checkbox" name="grayscale_shortcut" {{ ck('grayscale_shortcut') }}> Grayscale on (or on a triple-click shortcut)</label>
+      <label><input type="checkbox" name="vip_notifications" {{ ck('vip_notifications') }}> Notifications limited to a VIP list</label>
+      <label><input type="checkbox" name="keyword_alerts" {{ ck('keyword_alerts') }}> Email keyword alerts, not every message</label>
+      <label><input type="checkbox" name="feeds_pruned" {{ ck('feeds_pruned') }}> Feeds you chose, not the algorithm's</label>
+    </div>
+  </fieldset>
+  <label class="block">Notes <span class="hint">what changed, what to try next month</span>
+    <textarea name="notes" rows="2">{{ v('notes') }}</textarea></label>
+  <button type="submit">{{ 'Update month' if cur else 'Save month' }}</button>
+</form>
+
+<h2 class="mt">Past months</h2>
+<table class="log">
+  <thead><tr><th>Month</th><th>Screen h/day</th><th>Pickups/day</th><th>Top app</th><th>Defaults</th><th></th></tr></thead>
+  <tbody>
+  {% for e in entries %}
+    <tr>
+      <td><a href="?month={{ e['month'] }}">{{ e['month'] }}</a></td>
+      <td>{{ e['screen_time_hours'] if e['screen_time_hours'] is not none else '—' }}</td>
+      <td>{{ e['pickups'] if e['pickups'] is not none else '—' }}</td>
+      <td class="muted-cell">{{ e['top_app'] or '—' }}</td>
+      <td>{{ (e['grayscale_shortcut'] or 0) + (e['vip_notifications'] or 0) + (e['keyword_alerts'] or 0) + (e['feeds_pruned'] or 0) }}/4</td>
+      <td>{{ delete_btn('attention_checkup', e['id']) }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="6" class="empty">No check-ups yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

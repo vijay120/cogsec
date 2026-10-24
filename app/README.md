@@ -55,14 +55,21 @@ cd /Users/vijay/cogsec && ./app/start
 - **Daily log — two touches a day.** Fill the morning part (sleep, habits, 3
   intentions) in the AM and save. In the evening, reopen it — your morning entries
   reload — add the reflection + tomorrow's #1 priority and save again.
-- **Urge & CBT — ad hoc.** Log an urge the moment it happens; write a CBT
-  reappraisal whenever something bothers you.
+- **Urge & CBT — ad hoc.** Log an urge the moment it happens, and tag it with the
+  habit (porn, phone, other). Each habit keeps its own "days since slip" streak.
+  Write a CBT reappraisal whenever something bothers you.
+- **Focus — per sprint.** Record the output goal, which of the 3 setup steps you
+  did (calendar, phone away, timer), whether you hit the goal, and what kind of
+  break you took.
+- **Attention check-up — monthly.** Copy your Screen Time daily average and pickups,
+  and check your phone's defaults are still in place. Linked from the dashboard and
+  the weekly review.
 - **Weekly review — once a week**, any day you keep (Saturday/Sunday both fine).
 - **Dashboard** shows your trends any time. The "How to use this" table lives there too.
 
 ### Score
 Your daily score is simply **how many practices you did that day** — aim for **8+**
-most days, not all 16. Skipping items is normal; a partial day still saves in full.
+most days, not all 19. Skipping items is normal; a partial day still saves in full.
 It's a consistency signal, not a grade.
 
 ---

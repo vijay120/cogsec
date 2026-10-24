@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Focus · CogSec{% endblock %}
+{% block content %}
+<h1>Focus sprints</h1>
+<p class="lede">One entry per sprint. The five steps: book it on the calendar, set an
+<b>output</b> goal ("slide 3, ~7 min", not "work on deck"), phone away, countdown timer
+running, then a real brain break: no new information.</p>
+
+<section class="tiles">
+  <div class="tile mini"><div class="tile-label">Sprints (30d)</div>
+    <div class="tile-value sm">{{ stats.n }}</div></div>
+  <div class="tile mini"><div class="tile-label">Goal hit</div>
+    <div class="tile-value sm">{{ stats.hit_pct if stats.hit_pct is not none else '—' }}<span class="unit">%</span></div></div>
+</section>
+
+<form method="post" class="card form">
+  <div class="row">
+    <label>Date <input type="date" name="sprint_date" value="{{ today }}"></label>
+    <label>Planned (min) <input type="number" min="5" max="240" step="5" name="planned_min" placeholder="60"></label>
+  </div>
+  <label class="block">Output goal <span class="hint">a thing that exists when you're done, broken into timed steps</span>
+    <textarea name="output_goal" rows="2" placeholder="Draft slides 3–5 (~20 min), email John for slide 17 data (~3 min)"></textarea></label>
+  <div class="checkgrid">
+    <label><input type="checkbox" name="calendared"> Booked on the calendar beforehand</label>
+    <label><input type="checkbox" name="phone_away"> Phone out of sight + notifications off</label>
+    <label><input type="checkbox" name="timer"> Countdown timer running</label>
+  </div>
+  <fieldset class="radios">
+    <legend>Hit the output goal?</legend>
+    {% for g in goal_hit %}
+      <label class="pill"><input type="radio" name="goal_hit" value="{{ g }}"
+        {{ 'checked' if loop.first }}> {{ g | capitalize }}</label>
+    {% endfor %}
+  </fieldset>
+  <label class="block">Break after <span class="hint">best → worst; be honest</span>
+    <select name="break_type">
+      <option value="">—</option>
+      {% for b in break_types %}<option value="{{ b }}">{{ b }}</option>{% endfor %}
+    </select></label>
+  <label class="block">Notes <textarea name="notes" rows="2"></textarea></label>
+  <button type="submit">Log sprint</button>
+</form>
+
+<section class="card mt">
+  <h2>Break types <span class="hint">last 30 days</span></h2>
+  {{ break_svg | safe }}
+</section>
+
+<h2 class="mt">Recent sprints</h2>
+<table class="log">
+  <thead><tr><th>Date</th><th>Output goal</th><th>Min</th><th>Steps</th><th>Hit</th><th>Break</th><th></th></tr></thead>
+  <tbody>
+  {% for e in entries %}
+    <tr>
+      <td>{{ e['sprint_date'] }}</td>
+      <td class="muted-cell">{{ e['output_goal'] or '—' }}</td>
+      <td>{{ e['planned_min'] or '—' }}</td>
+      <td>{{ (e['calendared'] or 0) + (e['phone_away'] or 0) + (e['timer'] or 0) }}/3</td>
+      <td>{{ e['goal_hit'] or '—' }}</td>
+      <td>{{ e['break_type'] or '—' }}</td>
+      <td>{{ delete_btn('focus_sprint', e['id']) }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="7" class="empty">No sprints yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

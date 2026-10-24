@@ -34,6 +34,11 @@ Print this or copy into your tracking tool. Check off as you go.
 
 - [ ] **Implementation intention held?** Did your "If X, then Y" fire today?
 
+### Phone Hygiene
+- [ ] **Grayscale** all day (Settings → Accessibility → Accessibility Shortcut → Color Filters, then triple-click)
+
+- [ ] **Phone parked outside the bathroom**, every trip. If I'm walking to the bathroom, then the phone goes on the hallway shelf. Keep a paper book in there instead.
+
 ### If a Difficult Moment Happened
 - [ ] **CBT reappraisal** (5 min — use practice/cbt-journal.md template)
   - Situation: _______________
@@ -57,6 +62,8 @@ Print this or copy into your tracking tool. Check off as you go.
 
 - [ ] **Screens off** 30 min before target sleep time
 
+- [ ] **A real conversation** today (in person or a call). This meets the need scrolling only imitates.
+
 ---
 
 ## Scoring (optional, for tracker)
@@ -65,7 +72,7 @@ Count your checks. Don't aim for 100% — aim for consistency.
 
 | Score | Meaning |
 |-------|---------|
-| 12+ | Excellent day — full practice |
+| 12+ | Excellent day — full practice (19 possible) |
 | 8-11 | Good day — core practices hit |
 | 4-7 | Partial day — foundations covered |
 | 0-3 | Reset day — no judgment, try again tomorrow |

@@ -2,9 +2,17 @@
 {% block title %}Urge · CogSec{% endblock %}
 {% block content %}
 <h1>Compulsion &amp; urge log</h1>
-<p class="lede">Log the urge whether or not you acted. Every surfed urge is one extinction rep.</p>
+<p class="lede">Log the urge whether or not you acted. Every surfed urge is one extinction rep.
+Phone reaches count too (bathroom, waiting, between tasks): each habit keeps its own slip streak.</p>
 
 <form method="post" class="card form">
+  <fieldset class="radios">
+    <legend>Habit</legend>
+    {% for key, label in habits %}
+      <label class="pill"><input type="radio" name="habit" value="{{ key }}"
+        {{ 'checked' if loop.first }}> {{ label }}</label>
+    {% endfor %}
+  </fieldset>
   <div class="row">
     <label>When <input type="datetime-local" name="logged_at" value="{{ now }}"></label>
     <label>Trigger
@@ -33,11 +41,12 @@
 
 <h2 class="mt">Recent urges</h2>
 <table class="log">
-  <thead><tr><th>When</th><th>Trigger</th><th>Feeling</th><th>Int.</th><th>Outcome</th><th></th></tr></thead>
+  <thead><tr><th>When</th><th>Habit</th><th>Trigger</th><th>Feeling</th><th>Int.</th><th>Outcome</th><th></th></tr></thead>
   <tbody>
   {% for e in entries %}
     <tr>
       <td>{{ e['logged_at'] | replace('T', ' ') }}</td>
+      <td>{{ habit_labels.get(e['habit'] or 'porn', e['habit']) }}</td>
       <td>{{ e['trigger'] }}</td>
       <td>{{ e['feeling'] }}</td>
       <td>{{ e['intensity'] }}</td>
@@ -45,7 +54,7 @@
       <td>{{ delete_btn('urge_log', e['id']) }}</td>
     </tr>
   {% else %}
-    <tr><td colspan="6" class="empty">No entries yet.</td></tr>
+    <tr><td colspan="7" class="empty">No entries yet.</td></tr>
   {% endfor %}
   </tbody>
 </table>

@@ -26,7 +26,8 @@
     <nav>
       {% set items = [
         ('dashboard', 'Dashboard', '◈'), ('daily', 'Daily', '☑'),
-        ('cbt', 'CBT', '✎'), ('urge', 'Urge', '⚡'), ('weekly', 'Weekly', '↻')] %}
+        ('focus', 'Focus', '◎'), ('cbt', 'CBT', '✎'), ('urge', 'Urge', '⚡'),
+        ('weekly', 'Weekly', '↻')] %}
       {% for key, label, glyph in items %}
         <a href="{{ url_for(key) }}"
            class="{{ 'on' if active == key else '' }}">
