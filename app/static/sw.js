@@ -7,7 +7,7 @@
  *
  * Bump VERSION to force clients onto new assets.
  */
-const VERSION = 'cogsec-v1';
+const VERSION = 'cogsec-v2';
 const ASSETS = `${VERSION}-assets`;
 const PAGES = `${VERSION}-pages`;
 
@@ -64,6 +64,11 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  // Practice audio: let the browser stream it directly. Caching 10 MB tracks
+  // would bloat storage, and a cached full response breaks seeking (Safari
+  // sends byte-range requests).
+  if (url.pathname.startsWith('/practice/audio/')) return;
 
   // Pages: network-first, so you always see current data when you have a signal.
   if (request.mode === 'navigate') {

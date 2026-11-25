@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title %}Practice · CogSec{% endblock %}
+{% macro v(field) %}{{ cur[field] if cur and cur[field] is not none else '' }}{% endmacro %}
+{% macro ck(field) %}{{ 'checked' if cur and cur[field] }}{% endmacro %}
+{% block content %}
+<h1>Practice: Seeing That Frees</h1>
+
+{% if not plan_loaded %}
+<p class="lede">The practice plan lives only on your Mac, so it isn't on this server.
+Open the tracker locally (<code>./app/start</code>) to see today's practice and play the audio.</p>
+{% else %}
+
+<section class="tiles">
+  <div class="tile mini"><div class="tile-label">Evening streak</div>
+    <div class="tile-value sm">{{ streak }}<span class="unit"> days</span></div></div>
+  <div class="tile mini"><div class="tile-label">Plan runs</div>
+    <div class="tile-value sm" style="font-size:0.95rem">{{ first_date }} → {{ last_date }}</div></div>
+</section>
+
+<p class="row">
+  <a href="?date={{ prev_date }}">← {{ prev_date }}</a> &nbsp;·&nbsp;
+  <input type="date" value="{{ sel_date }}" onchange="location.href='?date='+this.value"> &nbsp;·&nbsp;
+  <a href="?date={{ next_date }}">{{ next_date }} →</a>
+</p>
+
+{% if not row %}
+<p class="lede">No practice planned for {{ sel_date }}.</p>
+{% else %}
+<section class="card">
+  <h2>{{ row.day }} {{ row.date }} · {{ row.where }}</h2>
+  <p><b>{{ row.focus }}</b></p>
+
+  {% if row.morning %}<p>🌅 <b>Morning{% if row.morning_min %} ({{ row.morning_min }} min){% endif %}:</b> {{ row.morning }}</p>{% endif %}
+  {% if row.gym %}<p>🏋️ <b>Talk (gym or outside):</b> {{ row.gym }}</p>{% endif %}
+  {% if row.evening %}<p>🌙 <b>Evening{% if row.evening_min %} ({{ row.evening_min }} min){% endif %}:</b> {{ row.evening }}</p>{% endif %}
+
+  {% if row.link_url %}
+    <p>🎧 <a href="{{ row.link_url }}" target="_blank" rel="noopener">{{ row.link_label }}</a>
+      <span class="hint">Rob's recording on Dharma Seed</span></p>
+  {% endif %}
+  {% if row.audio %}
+    {% if audio_ok %}
+      <p>🎧 <b>Cue audio</b> <span class="hint">plays from your book folder, never uploaded</span></p>
+      <audio controls preload="none" style="width:100%"
+             src="{{ url_for('practice_audio', filename=row.audio) }}"></audio>
+    {% else %}
+      <p class="hint">Cue audio <code>{{ row.audio }}</code> isn't in {{ audio_dir }} on this machine.</p>
+    {% endif %}
+  {% endif %}
+
+  {% if row.prompt %}<p>👁 <b>Way of looking today:</b> {{ row.prompt }}</p>{% endif %}
+</section>
+{% endif %}
+
+<form method="post" class="card form mt">
+  <input type="hidden" name="log_date" value="{{ sel_date }}">
+  <div class="checkgrid">
+    <label><input type="checkbox" name="morning_done" {{ ck('morning_done') }}> Morning reading</label>
+    <label><input type="checkbox" name="gym_done" {{ ck('gym_done') }}> Gym listening</label>
+    <label><input type="checkbox" name="evening_done" {{ ck('evening_done') }}> Evening practice <span class="hint">also ticks Meditation on today's Daily log</span></label>
+    <label><input type="checkbox" name="prompt_tried" {{ ck('prompt_tried') }}> Tried the way of looking in daily life</label>
+  </div>
+  <label class="block">Insight log <span class="hint">one line before bed. This is what keeps insights from fading.</span>
+    <textarea name="insight" rows="2" placeholder="What did you see today?">{{ v('insight') }}</textarea></label>
+
+  <details {{ 'open' if cur and (cur['recon_target'] or cur['recon_mismatch'] or cur['recon_check']) }}>
+    <summary>Reconsolidation (optional)</summary>
+    <label class="block">The reaction <span class="hint">felt in the body, not a summary</span>
+      <textarea name="recon_target" rows="2" placeholder="e.g. tight chest: 'I've messed this up'">{{ v('recon_target') }}</textarea></label>
+    <label class="block">The felt fact that contradicts it <span class="hint">held alongside the old feeling, not argued with</span>
+      <textarea name="recon_mismatch" rows="2" placeholder="e.g. the web of conditions; a time it wasn't true">{{ v('recon_mismatch') }}</textarea></label>
+    <label class="block">Next time it came up <span class="hint">did the charge change? don't grade how you managed it</span>
+      <textarea name="recon_check" rows="2">{{ v('recon_check') }}</textarea></label>
+  </details>
+  <button type="submit">Save</button>
+</form>
+
+{% if upcoming %}
+<h2 class="mt">Coming up</h2>
+<table class="log">
+  <thead><tr><th>Date</th><th>Focus</th><th>Evening</th></tr></thead>
+  <tbody>
+  {% for u in upcoming %}
+    <tr><td><a href="?date={{ u.date }}">{{ u.day }} {{ u.date }}</a></td>
+        <td>{{ u.focus }}</td><td class="muted-cell">{{ u.evening or '—' }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endif %}
+
+<h2 class="mt">Insight log</h2>
+<table class="log">
+  <thead><tr><th>Date</th><th>Insight</th><th>Reconsolidation</th><th></th></tr></thead>
+  <tbody>
+  {% for e in insights %}
+    <tr>
+      <td><a href="?date={{ e['log_date'] }}">{{ e['log_date'] }}</a></td>
+      <td class="muted-cell">{{ e['insight'] or '—' }}</td>
+      <td class="muted-cell">{% if e['recon_target'] %}{{ e['recon_target'] }}{% if e['recon_check'] %} → {{ e['recon_check'] }}{% endif %}{% else %}—{% endif %}</td>
+      <td>{{ delete_btn('practice_log', e['id']) }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="4" class="empty">Nothing written yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

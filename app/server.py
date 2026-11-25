@@ -13,6 +13,7 @@ passcode is a hard error rather than a silently open journal.
 """
 
 import hmac
+import json
 import os
 import secrets
 import threading
@@ -477,6 +478,95 @@ def weekly():
         distortions=DISTORTIONS, triggers=URGE_TRIGGERS,
         entries=db.recent("weekly_review", 12),
     )
+
+
+# --------------------------------------------------------------------------
+# Practice plan (Seeing That Frees). Local-only by design: the plan JSON is
+# git-ignored and docker-ignored, and the audio is read straight from the
+# book folder on this Mac, so neither ever reaches GitHub or Fly. On a server
+# without them the page just says so.
+# --------------------------------------------------------------------------
+
+PLAN_PATH = os.environ.get(
+    "COGSEC_PRACTICE_PLAN",
+    os.path.join(os.path.dirname(__file__), "practice", "plan.json"),
+)
+AUDIO_DIR = os.path.expanduser(os.environ.get(
+    "COGSEC_PRACTICE_AUDIO",
+    "~/Desktop/Burbea, Rob/Seeing That Frees_ Meditations on Emptiness and "
+    "Dependent Arising/Practice audio",
+))
+
+
+def _load_plan():
+    """{date: row} from the plan file, or None when it isn't on this machine."""
+    try:
+        with open(PLAN_PATH, encoding="utf-8") as fh:
+            rows = json.load(fh)["rows"]
+    except (OSError, ValueError, KeyError):
+        return None
+    return {r["date"]: r for r in rows}
+
+
+@app.route("/practice", methods=["GET", "POST"])
+def practice():
+    if request.method == "POST":
+        g = lambda k: request.form.get(k, "").strip()
+        f = {
+            "log_date": request.form.get("log_date") or date.today().isoformat(),
+            "morning_done": _bool("morning_done"),
+            "gym_done": _bool("gym_done"),
+            "evening_done": _bool("evening_done"),
+            "prompt_tried": _bool("prompt_tried"),
+            "insight": g("insight"),
+            "recon_target": g("recon_target"),
+            "recon_mismatch": g("recon_mismatch"),
+            "recon_check": g("recon_check"),
+        }
+        db.upsert_practice(f)
+        # The evening sit is also the Daily log's "meditation" item. Tick it on
+        # that day's existing log (never create one) and re-score the day.
+        if f["evening_done"]:
+            row = db.mark_meditation(f["log_date"])
+            if row is not None:
+                db.set_daily_score(f["log_date"], compute_daily_score(dict(row)))
+        return redirect(url_for("practice", date=f["log_date"]))
+
+    plan = _load_plan()
+    sel_date = request.args.get("date") or date.today().isoformat()
+    try:
+        sel = date.fromisoformat(sel_date)
+    except ValueError:
+        sel = date.today()
+        sel_date = sel.isoformat()
+    row = plan.get(sel_date) if plan else None
+    audio_ok = bool(row and row.get("audio")
+                    and os.path.isfile(os.path.join(AUDIO_DIR, row["audio"])))
+    upcoming = []
+    if plan:
+        for i in range(1, 4):
+            d = (sel + timedelta(days=i)).isoformat()
+            if d in plan:
+                upcoming.append(plan[d])
+    dates = sorted(plan) if plan else []
+    return render_template(
+        "practice.html", active="practice", plan_loaded=plan is not None,
+        sel_date=sel_date, row=row, audio_ok=audio_ok, audio_dir=AUDIO_DIR,
+        prev_date=(sel - timedelta(days=1)).isoformat(),
+        next_date=(sel + timedelta(days=1)).isoformat(),
+        first_date=dates[0] if dates else None, last_date=dates[-1] if dates else None,
+        cur=db.get_practice(sel_date), upcoming=upcoming,
+        insights=db.practice_insights(30), streak=db.practice_streak(),
+    )
+
+
+@app.route("/practice/audio/<path:filename>")
+def practice_audio(filename):
+    # send_from_directory refuses anything that escapes AUDIO_DIR, and serves
+    # byte ranges, which Safari needs to seek in an <audio> element.
+    if not filename.endswith(".mp3"):
+        return ("Not found", 404)
+    return send_from_directory(AUDIO_DIR, filename, conditional=True)
 
 
 @app.route("/delete/<table>/<int:row_id>", methods=["POST"])

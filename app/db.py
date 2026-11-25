@@ -114,6 +114,22 @@ CREATE TABLE IF NOT EXISTS attention_checkup (
     notes              TEXT,
     created_at         TEXT DEFAULT CURRENT_TIMESTAMP
 );
+
+-- One row per day of the meditation plan (Seeing That Frees). The plan itself
+-- is a local JSON file; this only stores what you did and noticed.
+CREATE TABLE IF NOT EXISTS practice_log (
+    id            INTEGER PRIMARY KEY,
+    log_date      TEXT UNIQUE NOT NULL,
+    morning_done  INTEGER DEFAULT 0,
+    gym_done      INTEGER DEFAULT 0,
+    evening_done  INTEGER DEFAULT 0,
+    prompt_tried  INTEGER DEFAULT 0,   -- tried the "way of looking" in daily life
+    insight       TEXT,                -- the one line that stops insights fading
+    recon_target  TEXT,                -- reconsolidation: the reaction worked on
+    recon_mismatch TEXT,               -- the felt fact that contradicted it
+    recon_check   TEXT,                -- next encounter: did the charge change?
+    created_at    TEXT DEFAULT CURRENT_TIMESTAMP
+);
 """
 
 
@@ -293,9 +309,80 @@ def upsert_checkup(data):
         )
 
 
+def upsert_practice(data):
+    with get_db() as conn:
+        conn.execute(
+            """
+            INSERT INTO practice_log
+              (log_date, morning_done, gym_done, evening_done, prompt_tried,
+               insight, recon_target, recon_mismatch, recon_check)
+            VALUES
+              (:log_date, :morning_done, :gym_done, :evening_done, :prompt_tried,
+               :insight, :recon_target, :recon_mismatch, :recon_check)
+            ON CONFLICT(log_date) DO UPDATE SET
+               morning_done=excluded.morning_done,
+               gym_done=excluded.gym_done,
+               evening_done=excluded.evening_done,
+               prompt_tried=excluded.prompt_tried,
+               insight=excluded.insight,
+               recon_target=excluded.recon_target,
+               recon_mismatch=excluded.recon_mismatch,
+               recon_check=excluded.recon_check
+            """,
+            data,
+        )
+
+
+def mark_meditation(log_date):
+    """Tick 'meditation' on an existing daily log. Returns the updated row or None."""
+    with get_db() as conn:
+        conn.execute(
+            "UPDATE daily_log SET meditation = 1 WHERE log_date = ?", (log_date,))
+        return conn.execute(
+            "SELECT * FROM daily_log WHERE log_date = ?", (log_date,)).fetchone()
+
+
+def set_daily_score(log_date, score):
+    with get_db() as conn:
+        conn.execute("UPDATE daily_log SET score = ? WHERE log_date = ?",
+                     (score, log_date))
+
+
+def get_practice(log_date):
+    with get_db() as conn:
+        return conn.execute(
+            "SELECT * FROM practice_log WHERE log_date = ?", (log_date,)
+        ).fetchone()
+
+
+def practice_insights(limit=30):
+    """Most recent days with something written down, newest first."""
+    with get_db() as conn:
+        return conn.execute(
+            """SELECT * FROM practice_log
+               WHERE COALESCE(insight,'') <> '' OR COALESCE(recon_target,'') <> ''
+               ORDER BY log_date DESC LIMIT ?""", (limit,)
+        ).fetchall()
+
+
+def practice_streak():
+    """Consecutive days up to today (or yesterday) with the evening practice done."""
+    with get_db() as conn:
+        dates = {r["log_date"] for r in conn.execute(
+            "SELECT log_date FROM practice_log WHERE evening_done = 1").fetchall()}
+    d = date.today()
+    if d.isoformat() not in dates:      # today's sit may simply not have happened yet
+        d -= timedelta(days=1)
+    streak = 0
+    while d.isoformat() in dates:
+        streak += 1
+        d -= timedelta(days=1)
+    return streak
+
+
 def delete_row(table, row_id):
     allowed = {"daily_log", "cbt_entry", "urge_log", "weekly_review",
-               "focus_sprint", "attention_checkup"}
+               "focus_sprint", "attention_checkup", "practice_log"}
     if table not in allowed:
         raise ValueError("unknown table")
     with get_db() as conn:
@@ -321,6 +408,7 @@ def recent(table, limit=20):
         "weekly_review": "week_start DESC",
         "focus_sprint": "sprint_date DESC, id DESC",
         "attention_checkup": "month DESC",
+        "practice_log": "log_date DESC",
     }[table]
     with get_db() as conn:
         return conn.execute(

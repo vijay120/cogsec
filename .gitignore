@@ -5,3 +5,6 @@ __pycache__/
 # Personal tracker data — never commit (stays local only)
 *.db
 app/cogsec.db
+
+# Personal practice plan (Seeing That Frees) — local only
+app/practice/

@@ -64,6 +64,14 @@ cd /Users/vijay/cogsec && ./app/start
 - **Attention check-up — monthly.** Copy your Screen Time daily average and pickups,
   and check your phone's defaults are still in place. Linked from the dashboard and
   the weekly review.
+- **Practice — twice a day.** Today's row of the *Seeing That Frees* plan:
+  morning reading, optional gym talk, evening practice with the cue audio
+  playing right in the page, the day's "way of looking", and a one-line Insight
+  log (plus optional reconsolidation notes). Ticking the evening practice also
+  ticks Meditation on that day's Daily log if you've started one.
+  **Local only:** the plan is `app/practice/plan.json` (git- and docker-ignored)
+  and the audio is read from the book folder on this Mac
+  (`$COGSEC_PRACTICE_AUDIO` to change it). The deployed app shows a note instead.
 - **Weekly review — once a week**, any day you keep (Saturday/Sunday both fine).
 - **Dashboard** shows your trends any time. The "How to use this" table lives there too.
 

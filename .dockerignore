@@ -15,3 +15,6 @@ docs
 site
 mkdocs.yml
 README.md
+
+# Personal practice plan — never in the deployed image
+app/practice
