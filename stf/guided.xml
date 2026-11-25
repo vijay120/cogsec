@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>STF Guided</title>
+  <link>https://vijay120.github.io/cogsec/stf/</link>
+  <atom:link href="https://vijay120.github.io/cogsec/stf/guided.xml" rel="self" type="application/rss+xml"/>
+  <description>Rob Burbea's guided meditations plus my own cue tracks for the Seeing That Frees plan, in plan order. Play at 1× with Smart Speed off. Talks and guided meditations are hosted by Dharma Seed (dharmaseed.org) under CC BY-NC-ND 4.0; this feed only links to them. Private, unlisted feed.</description>
+  <language>en</language>
+  <lastBuildDate>Wed, 25 Nov 2026 20:29:24 +0000</lastBuildDate>
+  <itunes:author>Rob Burbea (via Dharma Seed)</itunes:author>
+  <itunes:image href="https://vijay120.github.io/cogsec/stf/guided.png"/>
+  <itunes:category text="Religion &amp; Spirituality"><itunes:category text="Buddhism"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>serial</itunes:type>
+  <itunes:block>Yes</itunes:block>
+  <item>
+    <title>Wed Dec 2 · Ch 5 · Breath Meditation (1st Instructions and Guided Meditation)</title>
+    <description>Ch 5: Samādhi and its Place in Insight Practice (2/3).
+Plan dates: Wed Dec 2.
+Today's way of looking: Let the breath feel good during a nappy change or a red light.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9812/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 5: Samādhi and its Place in Insight Practice (2/3).
+Plan dates: Wed Dec 2.
+Today's way of looking: Let the breath feel good during a nappy change or a red light.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9812/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9812/20090909-Rob_Burbea-GAIA-breath_meditation_1st_instructions_and_guided_meditation-9812.mp3" length="44131492" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9812</guid>
+    <pubDate>Thu, 01 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>46:01</itunes:duration>
+    <itunes:episode>1</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9812/</link>
+  </item>
+  <item>
+    <title>Thu Dec 3 · Ch 5 · Breath Meditation (2nd Instructions/Guided Meditation)</title>
+    <description>Ch 5: Samādhi and its Place in Insight Practice (3/3).
+Plan dates: Thu Dec 3.
+Today's way of looking: Notice how a calmer mind sees the same situation differently.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9818/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 5: Samādhi and its Place in Insight Practice (3/3).
+Plan dates: Thu Dec 3.
+Today's way of looking: Notice how a calmer mind sees the same situation differently.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9818/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9818/20090910-Rob_Burbea-GAIA-breath_meditation_2nd_instructions_guided_meditation-9818.mp3" length="46757037" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9818</guid>
+    <pubDate>Fri, 02 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>48:37</itunes:duration>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9818/</link>
+  </item>
+  <item>
+    <title>Fri Dec 4 · Ch 6 · Cue audio – Seeing the holes in things and noticing space</title>
+    <description>Ch 6: Emptiness that's Easy to See (1/2).
+Plan dates: Fri Dec 4.
+Today's way of looking: When stuck, break the moment into sights, sounds, sensations, thoughts.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 6: Emptiness that's Easy to See (1/2).
+Plan dates: Fri Dec 4.
+Today's way of looking: When stuck, break the moment into sights, sounds, sensations, thoughts.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch06-Seeing-the-holes-in-things-and-noticing-space.m4a" length="1032638" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch06</guid>
+    <pubDate>Sat, 03 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:12:52</itunes:duration>
+    <itunes:episode>3</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Sat Dec 5 · Ch 6 · The Space of Awareness – Impermanence (1st Guided Meditation)</title>
+    <description>Ch 6: Emptiness that's Easy to See (2/2).
+Plan dates: Sat Dec 5.
+Today's way of looking: When a hindrance is present, ask: what story is it telling about me?
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9811/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 6: Emptiness that's Easy to See (2/2).
+Plan dates: Sat Dec 5.
+Today's way of looking: When a hindrance is present, ask: what story is it telling about me?
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9811/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9811/20090909-Rob_Burbea-GAIA-the_space_of_awareness_impermanence_1st_guided_meditation-9811.mp3" length="38935083" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9811</guid>
+    <pubDate>Sun, 04 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>40:30</itunes:duration>
+    <itunes:episode>4</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9811/</link>
+  </item>
+  <item>
+    <title>Sun Dec 6 · Ch 7 · Cue audio – Staying at contact and dot to dot</title>
+    <description>Ch 7: An Understanding of Mindfulness (1/2).
+Plan dates: Sun Dec 6.
+Today's way of looking: Eat one meal with close attention and find the gaps in the pleasure.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 7: An Understanding of Mindfulness (1/2).
+Plan dates: Sun Dec 6.
+Today's way of looking: Eat one meal with close attention and find the gaps in the pleasure.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch07-Staying-at-contact-and-dot-to-dot.m4a" length="1069140" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch07</guid>
+    <pubDate>Mon, 05 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:13:14</itunes:duration>
+    <itunes:episode>5</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Mon Dec 7 · Ch 7 · Staying at 'contact' (Catherine McGee)</title>
+    <description>Ch 7: An Understanding of Mindfulness (2/2).
+Plan dates: Mon Dec 7.
+Today's way of looking: Walking in rain or cold: what exactly is terrible here, moment by moment?
+Play at 1×, Smart Speed off.
+Catherine McGee, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12510/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 7: An Understanding of Mindfulness (2/2).
+Plan dates: Mon Dec 7.
+Today's way of looking: Walking in rain or cold: what exactly is terrible here, moment by moment?
+Play at 1×, Smart Speed off.
+Catherine McGee, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12510/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12510/20110211-Catherine_McGee-GAIA-staying_at_contact-12510.mp3" length="63845364" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12510</guid>
+    <pubDate>Tue, 06 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:06:34</itunes:duration>
+    <itunes:episode>6</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Catherine McGee</itunes:author>
+    <link>https://dharmaseed.org/talks/12510/</link>
+  </item>
+  <item>
+    <title>Wed Dec 9 · Ch 8 · Cue audio – Ending blame the web of conditions</title>
+    <description>Ch 8: Eyes Wide Open: Seeing Causes and Conditions.
+Plan dates: Wed Dec 9.
+Today's way of looking: When you blame yourself or someone, name four conditions behind it.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 8: Eyes Wide Open: Seeing Causes and Conditions.
+Plan dates: Wed Dec 9.
+Today's way of looking: When you blame yourself or someone, name four conditions behind it.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch08-Ending-blame-the-web-of-conditions.m4a" length="906646" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch08</guid>
+    <pubDate>Wed, 07 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:11:36</itunes:duration>
+    <itunes:episode>7</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Tue Dec 15 · Ch 9 · Cue audio – Loosening a self definition</title>
+    <description>Ch 9: Stories, Personalities, Liberations (2/2).
+Plan dates: Tue Dec 15.
+Today's way of looking: Notice the opposite quality to your chosen self-definition when it shows up.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 9: Stories, Personalities, Liberations (2/2).
+Plan dates: Tue Dec 15.
+Today's way of looking: Notice the opposite quality to your chosen self-definition when it shows up.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch09-Loosening-a-self-definition.m4a" length="822895" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch09</guid>
+    <pubDate>Thu, 08 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:10:10</itunes:duration>
+    <itunes:episode>8</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Thu Dec 17 · Ch 10 · Cue audio – Riding out craving and staying with vedana</title>
+    <description>Ch 10: Dependent Origination (1) (1/2).
+Plan dates: Thu Dec 17.
+Today's way of looking: When craving hits, ride the wave for 90 seconds before acting.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 10: Dependent Origination (1) (1/2).
+Plan dates: Thu Dec 17.
+Today's way of looking: When craving hits, ride the wave for 90 seconds before acting.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch10-Riding-out-craving-and-staying-with-vedana.m4a" length="875490" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch10</guid>
+    <pubDate>Fri, 09 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:11:22</itunes:duration>
+    <itunes:episode>9</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Fri Dec 25 · Ch 11 · Cue audio – Noticing the sense of self</title>
+    <description>Ch 11: The Experience of Self Beyond Personality (2/2).
+Plan dates: Fri Dec 25.
+Today's way of looking: Notice how the body tightens when the self-sense tightens.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 11: The Experience of Self Beyond Personality (2/2).
+Plan dates: Fri Dec 25.
+Today's way of looking: Notice how the body tightens when the self-sense tightens.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch11-Noticing-the-sense-of-self.m4a" length="789002" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch11</guid>
+    <pubDate>Sat, 10 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:10:39</itunes:duration>
+    <itunes:episode>10</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Sun Dec 27 · Ch 12 · Guided Meditation: Three Characteristics</title>
+    <description>Ch 12: Three Ways of Looking (1): Anicca (1/3).
+Plan dates: Sun Dec 27, Mon Jan 4, Sat Jan 30.
+Today's way of looking: Notice endings: a sound, a taste, a mood.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9543/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 12: Three Ways of Looking (1): Anicca (1/3).
+Plan dates: Sun Dec 27, Mon Jan 4, Sat Jan 30.
+Today's way of looking: Notice endings: a sound, a taste, a mood.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9543/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9543/20100123-Rob_Burbea-GAIA-guided_meditation_three_characteristics-9543.mp3" length="26546642" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9543</guid>
+    <pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>55:14</itunes:duration>
+    <itunes:episode>11</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9543/</link>
+  </item>
+  <item>
+    <title>Thu Dec 31 · Ch 12 · Guided Meditation on the Three Characteristics (2009)</title>
+    <description>Ch 12: Three Ways of Looking (1): Anicca (3/3).
+Plan dates: Thu Dec 31.
+Today's way of looking: When something feels permanent ('always', 'never'), look for its changing.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11124/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 12: Three Ways of Looking (1): Anicca (3/3).
+Plan dates: Thu Dec 31.
+Today's way of looking: When something feels permanent ('always', 'never'), look for its changing.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11124/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11124/20090126-Rob_Burbea-GAIA-guided_meditation_on_the_three_characteristics-11124.mp3" length="50757624" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11124</guid>
+    <pubDate>Mon, 12 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>52:52</itunes:duration>
+    <itunes:episode>12</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11124/</link>
+  </item>
+  <item>
+    <title>Mon Feb 1 · Ch 15 · Guided Meditation: The Vastness of Awareness</title>
+    <description>Ch 15: Emptiness and Awareness (1) (1/3).
+Plan dates: Mon Feb 1.
+Today's way of looking: Let sounds appear in a big space of awareness.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9544/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 15: Emptiness and Awareness (1) (1/3).
+Plan dates: Mon Feb 1.
+Today's way of looking: Let sounds appear in a big space of awareness.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9544/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9544/20100131-Rob_Burbea-GAIA-guided_meditation_the_vastness_of_awareness-9544.mp3" length="23248791" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9544</guid>
+    <pubDate>Tue, 13 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>48:22</itunes:duration>
+    <itunes:episode>13</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9544/</link>
+  </item>
+  <item>
+    <title>Sun Feb 7 · Ch 15 · Guided Meditation – Cittamatra</title>
+    <description>Ch 15: Emptiness and Awareness (1) (3/3).
+Plan dates: Sun Feb 7.
+Today's way of looking: Things and awareness: is there a gap between them?
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11125/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 15: Emptiness and Awareness (1) (3/3).
+Plan dates: Sun Feb 7.
+Today's way of looking: Things and awareness: is there a gap between them?
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11125/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11125/20090202-Rob_Burbea-GAIA-guided_meditation_cittamatra-11125.mp3" length="42703973" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11125</guid>
+    <pubDate>Wed, 14 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>44:34</itunes:duration>
+    <itunes:episode>14</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11125/</link>
+  </item>
+  <item>
+    <title>Wed Feb 17 · Ch 17 · Cue audio – The sevenfold reasoning</title>
+    <description>Ch 17: The Impossible Self (3/3).
+Plan dates: Wed Feb 17.
+Today's way of looking: Notice the self-sense after looking for it and not finding it.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 17: The Impossible Self (3/3).
+Plan dates: Wed Feb 17.
+Today's way of looking: Notice the self-sense after looking for it and not finding it.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch17-The-sevenfold-reasoning.m4a" length="1375181" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch17</guid>
+    <pubDate>Thu, 15 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:16:33</itunes:duration>
+    <itunes:episode>15</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Mon Feb 22 · Ch 18 · Cue audio – No preferences and seeing dualities as empty</title>
+    <description>Ch 18: The Dependent Arising of Dualities (1/2).
+Plan dates: Mon Feb 22.
+Today's way of looking: Drop one preference today: hot or cold, quick or slow, quiet or noisy.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 18: The Dependent Arising of Dualities (1/2).
+Plan dates: Mon Feb 22.
+Today's way of looking: Drop one preference today: hot or cold, quick or slow, quiet or noisy.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch18-No-preferences-and-seeing-dualities-as-empty.m4a" length="931949" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch18</guid>
+    <pubDate>Fri, 16 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:13:33</itunes:duration>
+    <itunes:episode>16</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Wed Feb 24 · Ch 19 · Cue audio – Seeing perceptions as just a perception</title>
+    <description>Ch 19: The Fading of Perception (1/2).
+Plan dates: Wed Feb 24.
+Today's way of looking: Label something that bugs you 'just a perception'.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 19: The Fading of Perception (1/2).
+Plan dates: Wed Feb 24.
+Today's way of looking: Label something that bugs you 'just a perception'.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch19-Seeing-perceptions-as-just-a-perception.m4a" length="812623" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch19</guid>
+    <pubDate>Sat, 17 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:11:47</itunes:duration>
+    <itunes:episode>17</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Thu Feb 25 · Ch 19 · The Space of Awareness – Only Impressions in Awareness (3rd Guided Meditation)</title>
+    <description>Ch 19: The Fading of Perception (2/2).
+Plan dates: Thu Feb 25.
+Today's way of looking: Notice how things look a bit lighter after a sit.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9820/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 19: The Fading of Perception (2/2).
+Plan dates: Thu Feb 25.
+Today's way of looking: Notice how things look a bit lighter after a sit.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9820/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9820/20090911-Rob_Burbea-GAIA-the_space_of_awareness_only_impressions_in_awareness_3rd_guided_meditation-9820.mp3" length="38876127" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9820</guid>
+    <pubDate>Sun, 18 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>40:25</itunes:duration>
+    <itunes:episode>18</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9820/</link>
+  </item>
+  <item>
+    <title>Sat Feb 27 · Ch 20 · Seventh Instructions and Guided Metta: Metta and Emptiness</title>
+    <description>Ch 20: Love, Emptiness, and the Healing of the Heart (2/2).
+Plan dates: Sat Feb 27.
+Today's way of looking: When the heart is open, notice how solid things seem.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12526/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 20: Love, Emptiness, and the Healing of the Heart (2/2).
+Plan dates: Sat Feb 27.
+Today's way of looking: When the heart is open, notice how solid things seem.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12526/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12526/20110212-Rob_Burbea-GAIA-seventh_instructions_and_guided_metta_meditation_metta_and_emptiness-12526.mp3" length="33509258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12526</guid>
+    <pubDate>Mon, 19 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>34:58</itunes:duration>
+    <itunes:episode>19</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12526/</link>
+  </item>
+  <item>
+    <title>Mon Mar 1 · Ch 21 · Cue audio – The emptiness of clinging</title>
+    <description>Ch 21: Buildings and their Building Blocks, Deconstructed (1/2).
+Plan dates: Mon Mar 1.
+Today's way of looking: Clinging needs an object. Notice the two leaning on each other.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 21: Buildings and their Building Blocks, Deconstructed (1/2).
+Plan dates: Mon Mar 1.
+Today's way of looking: Clinging needs an object. Notice the two leaning on each other.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch21-The-emptiness-of-clinging.m4a" length="814916" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch21</guid>
+    <pubDate>Tue, 20 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:10:44</itunes:duration>
+    <itunes:episode>20</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Wed Mar 3 · Ch 22 · Cue audio – Parts and wholes neither one nor many</title>
+    <description>Ch 22: No Thing (1/2).
+Plan dates: Wed Mar 3.
+Today's way of looking: Is this mood one thing or many?
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 22: No Thing (1/2).
+Plan dates: Wed Mar 3.
+Today's way of looking: Is this mood one thing or many?
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch22-Parts-and-wholes-neither-one-nor-many.m4a" length="967081" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch22</guid>
+    <pubDate>Wed, 21 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:12:17</itunes:duration>
+    <itunes:episode>21</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Fri Mar 5 · Ch 23 · Cue audio – Walking and finding it empty</title>
+    <description>Ch 23: The Nature of Walking.
+Plan dates: Fri Mar 5.
+Today's way of looking: Where is walking happening right now?
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 23: The Nature of Walking.
+Plan dates: Fri Mar 5.
+Today's way of looking: Where is walking happening right now?
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch23-Walking-and-finding-it-empty.m4a" length="898681" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch23</guid>
+    <pubDate>Thu, 22 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:11:51</itunes:duration>
+    <itunes:episode>22</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Sat Mar 6 · Ch 24 · Cue audio – Love and emptiness who is the other</title>
+    <description>Ch 24: Emptiness Views and the Sustenance of Love (1/3).
+Plan dates: Sat Mar 6.
+Today's way of looking: Who exactly am I annoyed with? Look for them.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 24: Emptiness Views and the Sustenance of Love (1/3).
+Plan dates: Sat Mar 6.
+Today's way of looking: Who exactly am I annoyed with? Look for them.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch24-Love-and-emptiness-who-is-the-other.m4a" length="1010985" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch24</guid>
+    <pubDate>Fri, 23 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:14:23</itunes:duration>
+    <itunes:episode>23</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Mon Mar 8 · Ch 24 · First Instructions and Guided Metta Meditation</title>
+    <description>Ch 24: Emptiness Views and the Sustenance of Love (2/3).
+Plan dates: Mon Mar 8.
+Today's way of looking: See someone difficult as made of the same aggregates as you.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12516/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 24: Emptiness Views and the Sustenance of Love (2/3).
+Plan dates: Mon Mar 8.
+Today's way of looking: See someone difficult as made of the same aggregates as you.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12516/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12516/20110206-Rob_Burbea-GAIA-first_instructions_and_guided_metta_meditation-12516.mp3" length="53817857" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12516</guid>
+    <pubDate>Sat, 24 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>56:10</itunes:duration>
+    <itunes:episode>24</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12516/</link>
+  </item>
+  <item>
+    <title>Tue Mar 9 · Ch 24 · Fourth Instructions and Guided Metta Meditation</title>
+    <description>Ch 24: Emptiness Views and the Sustenance of Love (3/3).
+Plan dates: Tue Mar 9.
+Today's way of looking: Give away a small pleasure: 'may others have this too'.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12519/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 24: Emptiness Views and the Sustenance of Love (3/3).
+Plan dates: Tue Mar 9.
+Today's way of looking: Give away a small pleasure: 'may others have this too'.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12519/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12519/20110209-Rob_Burbea-GAIA-fourth_instructions_and_guided_metta_meditation-12519.mp3" length="52155071" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12519</guid>
+    <pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>54:22</itunes:duration>
+    <itunes:episode>25</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12519/</link>
+  </item>
+  <item>
+    <title>Fri Mar 12 · Ch 26 · Cue audio – The emptiness of time</title>
+    <description>Ch 26: About Time (1/2).
+Plan dates: Fri Mar 12.
+Today's way of looking: Find the edges of 'now'.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 26: About Time (1/2).
+Plan dates: Fri Mar 12.
+Today's way of looking: Find the edges of 'now'.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch26-The-emptiness-of-time.m4a" length="966407" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch26</guid>
+    <pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:12:35</itunes:duration>
+    <itunes:episode>26</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Tue Mar 16 · Ch 27 · Cue audio – Subject object and time all empty together</title>
+    <description>Ch 27: Dependent Origination (2) (2/2).
+Plan dates: Tue Mar 16.
+Today's way of looking: Catch the intention to look, just before looking.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 27: Dependent Origination (2) (2/2).
+Plan dates: Tue Mar 16.
+Today's way of looking: Catch the intention to look, just before looking.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch27-Subject-object-and-time-all-empty-together.m4a" length="950555" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch27</guid>
+    <pubDate>Tue, 27 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:13:09</itunes:duration>
+    <itunes:episode>27</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Thu Mar 18 · Ch 28 · Cue audio – The emptiness of insight itself</title>
+    <description>Ch 28: Dependent Cessation – The Unfabricated, The Deathless (2/2).
+Plan dates: Thu Mar 18.
+Today's way of looking: Even insight is empty. Don't hold onto today's understanding either.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</description>
+    <itunes:summary>Ch 28: Dependent Cessation – The Unfabricated, The Deathless (2/2).
+Plan dates: Thu Mar 18.
+Today's way of looking: Even insight is empty. Don't hold onto today's understanding either.
+Play at 1×, Smart Speed off.
+Short guided cue in my own words, based on the chapter's practice section. Sit on in silence after it ends.</itunes:summary>
+    <enclosure url="https://vijay120.github.io/cogsec/stf/audio/STF-Ch28-The-emptiness-of-insight-itself.m4a" length="659601" type="audio/x-m4a"/>
+    <guid isPermaLink="false">stf-cue-Ch28</guid>
+    <pubDate>Wed, 28 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>0:10:52</itunes:duration>
+    <itunes:episode>28</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Practice cue</itunes:author>
+  </item>
+  <item>
+    <title>Sat Mar 20 · Ch 30 · Guided Meditation – The Play of Appearances</title>
+    <description>Ch 30: Notions of the Ultimate.
+Plan dates: Sat Mar 20.
+Today's way of looking: Enjoy appearances as play.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12522/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 30: Notions of the Ultimate.
+Plan dates: Sat Mar 20.
+Today's way of looking: Enjoy appearances as play.
+Play at 1×, Smart Speed off.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12522/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12522/20110222-Rob_Burbea-GAIA-guided_meditation_the_play_of_appearances-12522.mp3" length="35797202" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12522</guid>
+    <pubDate>Thu, 29 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>37:22</itunes:duration>
+    <itunes:episode>29</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12522/</link>
+  </item>
+</channel>
+</rss>

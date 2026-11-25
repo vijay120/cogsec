@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>STF Talks</title>
+  <link>https://vijay120.github.io/cogsec/stf/</link>
+  <atom:link href="https://vijay120.github.io/cogsec/stf/talks.xml" rel="self" type="application/rss+xml"/>
+  <description>Rob Burbea's talks for my Seeing That Frees practice plan, in plan order. Play at 1.25×. Talks and guided meditations are hosted by Dharma Seed (dharmaseed.org) under CC BY-NC-ND 4.0; this feed only links to them. Private, unlisted feed.</description>
+  <language>en</language>
+  <lastBuildDate>Wed, 25 Nov 2026 20:29:24 +0000</lastBuildDate>
+  <itunes:author>Rob Burbea (via Dharma Seed)</itunes:author>
+  <itunes:image href="https://vijay120.github.io/cogsec/stf/talks.png"/>
+  <itunes:category text="Religion &amp; Spirituality"><itunes:category text="Buddhism"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>serial</itunes:type>
+  <itunes:block>Yes</itunes:block>
+  <item>
+    <title>Wed Nov 25 · Ch 1–3 · Opening Talk – Orienting and Relating to the Emptiness Retreat</title>
+    <description>Ch Pre–3: Foreword, Preface, Ch 1–3: Orientations (1/3).
+Plan dates: Wed Nov 25.
+Today's way of looking: Catch one moment today where the way you looked at something changed how it felt.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9549/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch Pre–3: Foreword, Preface, Ch 1–3: Orientations (1/3).
+Plan dates: Wed Nov 25.
+Today's way of looking: Catch one moment today where the way you looked at something changed how it felt.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9549/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9549/20100120-Rob_Burbea-GAIA-opening_talk_orienting_and_relating_to_the_emptiness_retreat-9549.mp3" length="24149802" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9549</guid>
+    <pubDate>Thu, 01 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>50:14</itunes:duration>
+    <itunes:episode>1</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9549/</link>
+  </item>
+  <item>
+    <title>Thu Nov 26 · Ch 1–3 · An Introduction to Emptiness</title>
+    <description>Ch Pre–3: Foreword, Preface, Ch 1–3: Orientations (2/3).
+Plan dates: Thu Nov 26.
+Today's way of looking: 'Fabrication': notice the mind adding a story to a plain event (a cry, a late reply, a traffic jam).
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9539/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch Pre–3: Foreword, Preface, Ch 1–3: Orientations (2/3).
+Plan dates: Thu Nov 26.
+Today's way of looking: 'Fabrication': notice the mind adding a story to a plain event (a cry, a late reply, a traffic jam).
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9539/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9539/20100121-Rob_Burbea-GAIA-an_introduction_to_emptiness-9539.mp3" length="34774423" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9539</guid>
+    <pubDate>Fri, 02 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:12:21</itunes:duration>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9539/</link>
+  </item>
+  <item>
+    <title>Fri Nov 27 · Ch 1–3 · Emptiness (2009 retreat)</title>
+    <description>Ch Pre–3: Foreword, Preface, Ch 1–3: Orientations (3/3).
+Plan dates: Fri Nov 27.
+Today's way of looking: If 'everything is empty' sounds bleak or exciting, notice that reaction as one more way of looking.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11121/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch Pre–3: Foreword, Preface, Ch 1–3: Orientations (3/3).
+Plan dates: Fri Nov 27.
+Today's way of looking: If 'everything is empty' sounds bleak or exciting, notice that reaction as one more way of looking.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11121/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11121/20090124-Rob_Burbea-GAIA-emptiness-11121.mp3" length="58464000" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11121</guid>
+    <pubDate>Sat, 03 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:00:52</itunes:duration>
+    <itunes:episode>3</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11121/</link>
+  </item>
+  <item>
+    <title>Sat Nov 28 · Ch 4 · Emptiness and Insight Meditation</title>
+    <description>Ch 4: The Cultivation of Insight (1/2).
+Plan dates: Sat Nov 28.
+Today's way of looking: Ways of looking are tools. Notice one view you're using today that you never chose.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/10025/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 4: The Cultivation of Insight (1/2).
+Plan dates: Sat Nov 28.
+Today's way of looking: Ways of looking are tools. Notice one view you're using today that you never chose.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/10025/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/10025/20091229-Rob_Burbea-GAIA-emptiness_and_insight_meditation-10025.mp3" length="59900000" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-10025</guid>
+    <pubDate>Sun, 04 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:02:25</itunes:duration>
+    <itunes:episode>4</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/10025/</link>
+  </item>
+  <item>
+    <title>Sun Nov 29 · Ch 4 · Maps for the Journey (A Brief Overview)</title>
+    <description>Ch 4: The Cultivation of Insight (2/2).
+Plan dates: Sun Nov 29.
+Today's way of looking: Ask once today: is this way of looking making things heavier or lighter?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9546/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 4: The Cultivation of Insight (2/2).
+Plan dates: Sun Nov 29.
+Today's way of looking: Ask once today: is this way of looking making things heavier or lighter?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9546/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9546/20100205-Rob_Burbea-GAIA-maps_for_the_journey_a_brief_overview-9546.mp3" length="34910626" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9546</guid>
+    <pubDate>Mon, 05 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:12:38</itunes:duration>
+    <itunes:episode>5</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9546/</link>
+  </item>
+  <item>
+    <title>Mon Nov 30 · Ch 5 · Samadhi and Insight (a few pointers)</title>
+    <description>Ch 5: Samādhi and its Place in Insight Practice (1/3).
+Plan dates: Mon Nov 30.
+Today's way of looking: Enjoy the breath on purpose for one minute today. Well-being is a resource, not a luxury.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9550/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 5: Samādhi and its Place in Insight Practice (1/3).
+Plan dates: Mon Nov 30.
+Today's way of looking: Enjoy the breath on purpose for one minute today. Well-being is a resource, not a luxury.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9550/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9550/20100121-Rob_Burbea-GAIA-samadhi_and_insight_a_few_pointers-9550.mp3" length="24726066" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9550</guid>
+    <pubDate>Tue, 06 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>51:26</itunes:duration>
+    <itunes:episode>6</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9550/</link>
+  </item>
+  <item>
+    <title>Wed Dec 9 · Ch 8 · Ending Blame</title>
+    <description>Ch 8: Eyes Wide Open: Seeing Causes and Conditions.
+Plan dates: Wed Dec 9.
+Today's way of looking: When you blame yourself or someone, name four conditions behind it.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12514/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 8: Eyes Wide Open: Seeing Causes and Conditions.
+Plan dates: Wed Dec 9.
+Today's way of looking: When you blame yourself or someone, name four conditions behind it.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12514/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12514/20110209-Rob_Burbea-GAIA-ending_blame-12514.mp3" length="52629258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12514</guid>
+    <pubDate>Wed, 07 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>54:55</itunes:duration>
+    <itunes:episode>7</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12514/</link>
+  </item>
+  <item>
+    <title>Sun Dec 13 · Ch 9 · Freeing the Self</title>
+    <description>Ch 9: Stories, Personalities, Liberations (1/2).
+Plan dates: Sun Dec 13.
+Today's way of looking: Pick one self-definition and watch for times it isn't true.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12521/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 9: Stories, Personalities, Liberations (1/2).
+Plan dates: Sun Dec 13.
+Today's way of looking: Pick one self-definition and watch for times it isn't true.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12521/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12521/20110206-Rob_Burbea-GAIA-freeing_the_self-12521.mp3" length="53205258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12521</guid>
+    <pubDate>Thu, 08 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>55:31</itunes:duration>
+    <itunes:episode>8</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12521/</link>
+  </item>
+  <item>
+    <title>Sat Dec 19 · Ch 10 · Contact and the Construction of Self</title>
+    <description>Ch 10: Dependent Origination (1) (2/2).
+Plan dates: Sat Dec 19.
+Today's way of looking: Name the feeling tone (pleasant, unpleasant, neutral) ten times today.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12513/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 10: Dependent Origination (1) (2/2).
+Plan dates: Sat Dec 19.
+Today's way of looking: Name the feeling tone (pleasant, unpleasant, neutral) ten times today.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12513/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12513/20110212-Rob_Burbea-GAIA-contact_and_the_construction_of_self-12513.mp3" length="57621258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12513</guid>
+    <pubDate>Fri, 09 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:00:09</itunes:duration>
+    <itunes:episode>9</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12513/</link>
+  </item>
+  <item>
+    <title>Mon Dec 21 · Ch 11 · The Experience of Self (Personality and Beyond)</title>
+    <description>Ch 11: The Experience of Self Beyond Personality (1/2).
+Plan dates: Mon Dec 21.
+Today's way of looking: Notice when 'I' feels dense and when it feels thin.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9551/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 11: The Experience of Self Beyond Personality (1/2).
+Plan dates: Mon Dec 21.
+Today's way of looking: Notice when 'I' feels dense and when it feels thin.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9551/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9551/20100122-Rob_Burbea-GAIA-the_experience_of_self_personality_and_beyond-9551.mp3" length="38413714" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9551</guid>
+    <pubDate>Sat, 10 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:19:56</itunes:duration>
+    <itunes:episode>10</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9551/</link>
+  </item>
+  <item>
+    <title>Tue Dec 29 · Ch 12 · Ways of Looking: (1) Anicca</title>
+    <description>Ch 12: Three Ways of Looking (1): Anicca (2/3).
+Plan dates: Tue Dec 29.
+Today's way of looking: Watch your daughter's expressions change. Impermanence, held with love.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12529/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 12: Three Ways of Looking (1): Anicca (2/3).
+Plan dates: Tue Dec 29.
+Today's way of looking: Watch your daughter's expressions change. Impermanence, held with love.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12529/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12529/20110213-Rob_Burbea-GAIA-ways_of_looking_1_anicca-12529.mp3" length="68869258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12529</guid>
+    <pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:11:52</itunes:duration>
+    <itunes:episode>11</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12529/</link>
+  </item>
+  <item>
+    <title>Sat Jan 2 · Ch 13 · Ways of Looking: (2) Dukkha</title>
+    <description>Ch 13: Three Ways of Looking (2): Dukkha (1/3).
+Plan dates: Sat Jan 2.
+Today's way of looking: Find a subtle grip in the body and relax it.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12531/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 13: Three Ways of Looking (2): Dukkha (1/3).
+Plan dates: Sat Jan 2.
+Today's way of looking: Find a subtle grip in the body and relax it.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12531/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12531/20110215-Rob_Burbea-GAIA-ways_of_looking_2_dukkha-12531.mp3" length="37829258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12531</guid>
+    <pubDate>Mon, 12 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>39:28</itunes:duration>
+    <itunes:episode>12</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12531/</link>
+  </item>
+  <item>
+    <title>Sun Jan 24 · Ch 13 · Practicing with the Three Characteristics</title>
+    <description>Ch 13: Three Ways of Looking (2): Dukkha (3/3).
+Plan dates: Sun Jan 24.
+Today's way of looking: Notice how suffering eases the moment clinging eases.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11130/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 13: Three Ways of Looking (2): Dukkha (3/3).
+Plan dates: Sun Jan 24.
+Today's way of looking: Notice how suffering eases the moment clinging eases.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11130/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11130/20090126-Rob_Burbea-GAIA-practicing_with_the_three_characteristics-11130.mp3" length="73697731" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11130</guid>
+    <pubDate>Tue, 13 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:16:45</itunes:duration>
+    <itunes:episode>13</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11130/</link>
+  </item>
+  <item>
+    <title>Tue Jan 26 · Ch 14 · Ways of Looking: (3) Anatta</title>
+    <description>Ch 14: Three Ways of Looking (3): Anattā (1/3).
+Plan dates: Tue Jan 26.
+Today's way of looking: Say 'not me, not mine' to an irritation and see what happens.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12530/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 14: Three Ways of Looking (3): Anattā (1/3).
+Plan dates: Tue Jan 26.
+Today's way of looking: Say 'not me, not mine' to an irritation and see what happens.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12530/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12530/20110217-Rob_Burbea-GAIA-ways_of_looking_3_anatta-12530.mp3" length="49157258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12530</guid>
+    <pubDate>Wed, 14 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>51:19</itunes:duration>
+    <itunes:episode>14</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12530/</link>
+  </item>
+  <item>
+    <title>Thu Jan 28 · Ch 14 · Three Characteristics – Three Avenues to Freedom and Joy</title>
+    <description>Ch 14: Three Ways of Looking (3): Anattā (2/3).
+Plan dates: Thu Jan 28.
+Today's way of looking: Thoughts arrive by themselves. Notice one doing that.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9555/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 14: Three Ways of Looking (3): Anattā (2/3).
+Plan dates: Thu Jan 28.
+Today's way of looking: Thoughts arrive by themselves. Notice one doing that.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9555/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9555/20100123-Rob_Burbea-GAIA-three_characteristics_three_avenues_to_freedom_and_joy-9555.mp3" length="31594193" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9555</guid>
+    <pubDate>Thu, 15 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:05:44</itunes:duration>
+    <itunes:episode>15</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9555/</link>
+  </item>
+  <item>
+    <title>Wed Feb 3 · Ch 15 · Emptiness and the Vastness of Awareness</title>
+    <description>Ch 15: Emptiness and Awareness (1) (2/3).
+Plan dates: Wed Feb 3.
+Today's way of looking: When contracted, open to the sky, the room, the whole field of sound.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9542/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 15: Emptiness and Awareness (1) (2/3).
+Plan dates: Wed Feb 3.
+Today's way of looking: When contracted, open to the sky, the room, the whole field of sound.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9542/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9542/20100131-Rob_Burbea-GAIA-emptiness_and_the_vastness_of_awareness-9542.mp3" length="45834881" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9542</guid>
+    <pubDate>Fri, 16 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:35:22</itunes:duration>
+    <itunes:episode>16</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9542/</link>
+  </item>
+  <item>
+    <title>Tue Feb 9 · Ch 16 · Concepts, Views, Reality</title>
+    <description>Ch 16: The Relationship with Concepts in Meditation (1/2).
+Plan dates: Tue Feb 9.
+Today's way of looking: Notice a concept being useful, and one being taken as solid.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9540/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 16: The Relationship with Concepts in Meditation (1/2).
+Plan dates: Tue Feb 9.
+Today's way of looking: Notice a concept being useful, and one being taken as solid.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9540/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9540/20100130-Rob_Burbea-GAIA-concepts_views_reality-9540.mp3" length="41723659" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9540</guid>
+    <pubDate>Sat, 17 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:26:49</itunes:duration>
+    <itunes:episode>17</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9540/</link>
+  </item>
+  <item>
+    <title>Thu Feb 11 · Ch 16 · Integrity and the Poetics of Unknowing</title>
+    <description>Ch 16: The Relationship with Concepts in Meditation (2/2).
+Plan dates: Thu Feb 11.
+Today's way of looking: Hold one belief today a little more loosely.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11126/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 16: The Relationship with Concepts in Meditation (2/2).
+Plan dates: Thu Feb 11.
+Today's way of looking: Hold one belief today a little more loosely.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11126/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11126/20090201-Rob_Burbea-GAIA-integrity_and_the_poetics_of_unknowing-11126.mp3" length="66741258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11126</guid>
+    <pubDate>Sun, 18 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:09:40</itunes:duration>
+    <itunes:episode>18</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11126/</link>
+  </item>
+  <item>
+    <title>Sat Feb 13 · Ch 17 · The Seven-Fold Reasoning (The self cannot be found anywhere)</title>
+    <description>Ch 17: The Impossible Self (1/3).
+Plan dates: Sat Feb 13.
+Today's way of looking: Where exactly is the 'I' that is annoyed right now?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9552/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 17: The Impossible Self (1/3).
+Plan dates: Sat Feb 13.
+Today's way of looking: Where exactly is the 'I' that is annoyed right now?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9552/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9552/20100129-Rob_Burbea-GAIA-the_seven_fold_reasoning_the_self_cannot_be_found_anywhere-9552.mp3" length="51367742" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9552</guid>
+    <pubDate>Mon, 19 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:46:53</itunes:duration>
+    <itunes:episode>19</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9552/</link>
+  </item>
+  <item>
+    <title>Mon Feb 15 · Ch 17 · Chandrakirti's Chariot and the Unfindable Self</title>
+    <description>Ch 17: The Impossible Self (2/3).
+Plan dates: Mon Feb 15.
+Today's way of looking: Look for the self in the body, then in the mind. Where is it?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11118/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 17: The Impossible Self (2/3).
+Plan dates: Mon Feb 15.
+Today's way of looking: Look for the self in the body, then in the mind. Where is it?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11118/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11118/20090131-Rob_Burbea-GAIA-chandrakirtis_chariot_and_the_unfindable_self-11118.mp3" length="60869258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11118</guid>
+    <pubDate>Tue, 20 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:03:31</itunes:duration>
+    <itunes:episode>20</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11118/</link>
+  </item>
+  <item>
+    <title>Tue Feb 23 · Ch 18 · Non-Duality and the Fading of Perception</title>
+    <description>Ch 18: The Dependent Arising of Dualities (2/2).
+Plan dates: Tue Feb 23.
+Today's way of looking: Good and bad day: which pole is the mind clinging to?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9548/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 18: The Dependent Arising of Dualities (2/2).
+Plan dates: Tue Feb 23.
+Today's way of looking: Good and bad day: which pole is the mind clinging to?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9548/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9548/20100204-Rob_Burbea-GAIA-non_duality_and_the_fading_of_perception-9548.mp3" length="49792295" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9548</guid>
+    <pubDate>Wed, 21 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:43:36</itunes:duration>
+    <itunes:episode>21</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9548/</link>
+  </item>
+  <item>
+    <title>Fri Feb 26 · Ch 20 · Love, Healing, and Emptiness</title>
+    <description>Ch 20: Love, Emptiness, and the Healing of the Heart (1/2).
+Plan dates: Fri Feb 26.
+Today's way of looking: Offer metta to your daughter as she is in this changing moment.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9545/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 20: Love, Emptiness, and the Healing of the Heart (1/2).
+Plan dates: Fri Feb 26.
+Today's way of looking: Offer metta to your daughter as she is in this changing moment.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9545/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9545/20100207-Rob_Burbea-GAIA-love_healing_and_emptiness-9545.mp3" length="34294334" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9545</guid>
+    <pubDate>Thu, 22 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:11:21</itunes:duration>
+    <itunes:episode>22</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9545/</link>
+  </item>
+  <item>
+    <title>Tue Mar 2 · Ch 21 · Deepening Into Emptiness (Q&amp;A 4)</title>
+    <description>Ch 21: Buildings and their Building Blocks, Deconstructed (2/2).
+Plan dates: Tue Mar 2.
+Today's way of looking: Notice the groundless, slightly magical look of things after practice.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12520/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 21: Buildings and their Building Blocks, Deconstructed (2/2).
+Plan dates: Tue Mar 2.
+Today's way of looking: Notice the groundless, slightly magical look of things after practice.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/12520/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/12520/20110216-Rob_Burbea-GAIA-deepening_into_emptiness_question_and_answer_session_4-12520.mp3" length="77781258" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-12520</guid>
+    <pubDate>Fri, 23 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:21:12</itunes:duration>
+    <itunes:episode>23</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/12520/</link>
+  </item>
+  <item>
+    <title>Thu Mar 4 · Ch 22 · 'To see no-thing is to see excellently'</title>
+    <description>Ch 22: No Thing (2/2).
+Plan dates: Thu Mar 4.
+Today's way of looking: Look at your hand: is it one thing or many?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9556/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 22: No Thing (2/2).
+Plan dates: Thu Mar 4.
+Today's way of looking: Look at your hand: is it one thing or many?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9556/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9556/20100206-Rob_Burbea-GAIA-to_see_no_thing_is_to_see_excellently-9556.mp3" length="31138329" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9556</guid>
+    <pubDate>Sat, 24 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:04:47</itunes:duration>
+    <itunes:episode>24</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9556/</link>
+  </item>
+  <item>
+    <title>Wed Mar 10 · Ch 25 · No Mind</title>
+    <description>Ch 25: Emptiness and Awareness (2) (1/2).
+Plan dates: Wed Mar 10.
+Today's way of looking: Look for the one who knows.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9547/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 25: Emptiness and Awareness (2) (1/2).
+Plan dates: Wed Mar 10.
+Today's way of looking: Look for the one who knows.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9547/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9547/20100212-Rob_Burbea-GAIA-no_mind-9547.mp3" length="36934671" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9547</guid>
+    <pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:16:51</itunes:duration>
+    <itunes:episode>25</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9547/</link>
+  </item>
+  <item>
+    <title>Thu Mar 11 · Ch 25 · On the Nature of Mind</title>
+    <description>Ch 25: Emptiness and Awareness (2) (2/2).
+Plan dates: Thu Mar 11.
+Today's way of looking: Is awareness separate from what it knows?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11128/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 25: Emptiness and Awareness (2) (2/2).
+Plan dates: Thu Mar 11.
+Today's way of looking: Is awareness separate from what it knows?
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11128/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11128/20090213-Rob_Burbea-GAIA-on_the_nature_of_mind-11128.mp3" length="64668614" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11128</guid>
+    <pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:07:30</itunes:duration>
+    <itunes:episode>26</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11128/</link>
+  </item>
+  <item>
+    <title>Sat Mar 13 · Ch 26 · Dependent Origination, Awareness, and Time</title>
+    <description>Ch 26: About Time (2/2).
+Plan dates: Sat Mar 13.
+Today's way of looking: When rushing, notice how 'time' is made by wanting.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11120/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 26: About Time (2/2).
+Plan dates: Sat Mar 13.
+Today's way of looking: When rushing, notice how 'time' is made by wanting.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11120/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11120/20090214-Rob_Burbea-GAIA-dependent_origination_awareness_and_time-11120.mp3" length="65168787" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11120</guid>
+    <pubDate>Tue, 27 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:08:01</itunes:duration>
+    <itunes:episode>27</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11120/</link>
+  </item>
+  <item>
+    <title>Mon Mar 15 · Ch 27 · The Subtlety of Dependent Origination</title>
+    <description>Ch 27: Dependent Origination (2) (1/2).
+Plan dates: Mon Mar 15.
+Today's way of looking: Attention and its object: notice them arise together.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9553/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 27: Dependent Origination (2) (1/2).
+Plan dates: Mon Mar 15.
+Today's way of looking: Attention and its object: notice them arise together.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9553/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9553/20100213-Rob_Burbea-GAIA-the_subtlety_of_dependent_origination-9553.mp3" length="34371961" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9553</guid>
+    <pubDate>Wed, 28 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:11:31</itunes:duration>
+    <itunes:episode>28</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9553/</link>
+  </item>
+  <item>
+    <title>Wed Mar 17 · Ch 28 · Dependent Cessation and the Unconditioned</title>
+    <description>Ch 28: Dependent Cessation – The Unfabricated, The Deathless (1/2).
+Plan dates: Wed Mar 17.
+Today's way of looking: Notice what remains when a reaction stops.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9541/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 28: Dependent Cessation – The Unfabricated, The Deathless (1/2).
+Plan dates: Wed Mar 17.
+Today's way of looking: Notice what remains when a reaction stops.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9541/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9541/20100214-Rob_Burbea-GAIA-dependent_cessation_and_the_unconditioned-9541.mp3" length="33193401" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9541</guid>
+    <pubDate>Thu, 29 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:09:04</itunes:duration>
+    <itunes:episode>29</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9541/</link>
+  </item>
+  <item>
+    <title>Thu Mar 18 · Ch 28 · The Unfabricated, The Deathless</title>
+    <description>Ch 28: Dependent Cessation – The Unfabricated, The Deathless (2/2).
+Plan dates: Thu Mar 18.
+Today's way of looking: Even insight is empty. Don't hold onto today's understanding either.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11135/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 28: Dependent Cessation – The Unfabricated, The Deathless (2/2).
+Plan dates: Thu Mar 18.
+Today's way of looking: Even insight is empty. Don't hold onto today's understanding either.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/11135/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/11135/20090215-Rob_Burbea-GAIA-the_unfabricated_the_deathless-11135.mp3" length="64406282" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-11135</guid>
+    <pubDate>Fri, 30 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:07:13</itunes:duration>
+    <itunes:episode>30</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/11135/</link>
+  </item>
+  <item>
+    <title>Fri Mar 19 · Ch 29 · The Union of Appearance and Emptiness</title>
+    <description>Ch 29: Beyond the Beyond….
+Plan dates: Fri Mar 19.
+Today's way of looking: Things appear vividly and are empty. Look at your daughter that way.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9554/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 29: Beyond the Beyond….
+Plan dates: Fri Mar 19.
+Today's way of looking: Things appear vividly and are empty. Look at your daughter that way.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9554/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9554/20100215-Rob_Burbea-GAIA-the_union_of_appearance_and_emptiness-9554.mp3" length="30879559" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9554</guid>
+    <pubDate>Sat, 31 Jan 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:04:15</itunes:duration>
+    <itunes:episode>31</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9554/</link>
+  </item>
+  <item>
+    <title>Mon Mar 22 · Ch 31 · A Wise Relationship to Practice</title>
+    <description>Ch 31: An Empowerment of Views.
+Plan dates: Mon Mar 22.
+Today's way of looking: Which way of looking frees you most easily? That's your default now.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9538/), CC BY-NC-ND 4.0.</description>
+    <itunes:summary>Ch 31: An Empowerment of Views.
+Plan dates: Mon Mar 22.
+Today's way of looking: Which way of looking frees you most easily? That's your default now.
+Play at 1.25×.
+Rob Burbea, Gaia House. Hosted by Dharma Seed (https://dharmaseed.org/talks/9538/), CC BY-NC-ND 4.0.</itunes:summary>
+    <enclosure url="https://dharmaseed.org/talks/9538/20100128-Rob_Burbea-GAIA-a_wise_relationship_to_practice-9538.mp3" length="37448277" type="audio/mpeg"/>
+    <guid isPermaLink="false">stf-ds-9538</guid>
+    <pubDate>Sun, 01 Feb 2026 12:00:00 +0000</pubDate>
+    <itunes:duration>1:17:55</itunes:duration>
+    <itunes:episode>32</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Rob Burbea</itunes:author>
+    <link>https://dharmaseed.org/talks/9538/</link>
+  </item>
+</channel>
+</rss>
